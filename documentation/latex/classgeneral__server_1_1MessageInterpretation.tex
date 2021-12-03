@@ -1,0 +1,96 @@
+\hypertarget{classgeneral__server_1_1MessageInterpretation}{\section{general\-\_\-server\-:\-:\-Message\-Interpretation \-Class \-Reference}
+\label{classgeneral__server_1_1MessageInterpretation}\index{general\-\_\-server\-::\-Message\-Interpretation@{general\-\_\-server\-::\-Message\-Interpretation}}
+}
+\-Inheritance diagram for general\-\_\-server\-:\-:\-Message\-Interpretation\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classgeneral__server_1_1MessageInterpretation}
+\end{center}
+\end{figure}
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgeneral__server_1_1MessageInterpretation_1_1Comp}{\-Comp}
+\item 
+class \hyperlink{classgeneral__server_1_1MessageInterpretation_1_1GimmePred}{\-Gimme\-Pred}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries sentence\-\_\-end\-\_\-type} \{ {\bfseries text}, 
+{\bfseries stream\-\_\-regex}
+ \}
+\item 
+enum {\bfseries sentence\-\_\-end\-\_\-format} \{ {\bfseries length}, 
+{\bfseries match}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_a84fa73e2de0f7f4e9c84c2cced476562}{{\bfseries \-Message\-Interpretation} (\hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$p\-Node, const \hyperlink{classgeneral__server_1_1Service}{\-Service} $\ast$p\-Service)}\label{classgeneral__server_1_1MessageInterpretation_a84fa73e2de0f7f4e9c84c2cced476562}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_a8e510006a2f0bb27202608ebdb5a8081}{const char $\ast$ {\bfseries name} () const }\label{classgeneral__server_1_1MessageInterpretation_a8e510006a2f0bb27202608ebdb5a8081}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_a8eff5596a996872386bc7caf687aabd4}{const \hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$ {\bfseries primary\-Output\-Transformation} () const }\label{classgeneral__server_1_1MessageInterpretation_a8eff5596a996872386bc7caf687aabd4}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_af78660161480606389981814a3970b6a}{const \hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$ {\bfseries message\-Transformation} () const }\label{classgeneral__server_1_1MessageInterpretation_af78660161480606389981814a3970b6a}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_a8b2fa5acd6e842632bffee6c5a9161d0}{\-I\-Xml\-Base\-Node $\ast$ {\bfseries message\-Transform} (const char $\ast$s\-Text\-Stream, \-I\-Xml\-Base\-Node $\ast$p\-Destination\-Node) const }\label{classgeneral__server_1_1MessageInterpretation_a8b2fa5acd6e842632bffee6c5a9161d0}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_aee4d30da2745414865238dc949445cf4}{const bool {\bfseries has\-Auto\-Session} () const }\label{classgeneral__server_1_1MessageInterpretation_aee4d30da2745414865238dc949445cf4}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_aaa025d0695a850cb1fbdcf4df9cdb87b}{const bool {\bfseries close\-Connection} () const }\label{classgeneral__server_1_1MessageInterpretation_aaa025d0695a850cb1fbdcf4df9cdb87b}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_a7a9f2498a0e166c6949185c9b00a33d1}{const char $\ast$ {\bfseries session\-I\-D} (const char $\ast$s\-Text\-Stream) const }\label{classgeneral__server_1_1MessageInterpretation_a7a9f2498a0e166c6949185c9b00a33d1}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_ac5f3f67fe549a961cca3887652e04fc9}{const \hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$ {\bfseries error\-Handler\-\_\-caller\-Free} (\hyperlink{classgeneral__server_1_1ExceptionBase}{\-Exception\-Base} \&eb) const }\label{classgeneral__server_1_1MessageInterpretation_ac5f3f67fe549a961cca3887652e04fc9}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_aaf50275f315e2ad580bded309d5569e4}{const bool {\bfseries needs\-Move\-All\-Prefixed\-Namespace\-Definitions\-To\-The\-Root} () const }\label{classgeneral__server_1_1MessageInterpretation_aaf50275f315e2ad580bded309d5569e4}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_a5b32b5eaf54c0363ec94f60e7ca934ed}{const bool {\bfseries gimme} (const char $\ast$s\-Text\-Stream) const }\label{classgeneral__server_1_1MessageInterpretation_a5b32b5eaf54c0363ec94f60e7ca934ed}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_a4c182aa0ae2d51d20fa7f4ec6f5e5295}{const bool {\bfseries is\-Sentece\-End} (const char $\ast$s\-Text\-Stream) const }\label{classgeneral__server_1_1MessageInterpretation_a4c182aa0ae2d51d20fa7f4ec6f5e5295}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_a2eb760a2782d153ea9d15b2cbb7e1a29}{const char $\ast$ {\bfseries to\-String} () const }\label{classgeneral__server_1_1MessageInterpretation_a2eb760a2782d153ea9d15b2cbb7e1a29}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_afde630a1b71679a0b2e0a66a836f8592}{void {\bfseries serialise} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \-I\-Xml\-Base\-Node $\ast$p\-Output) const }\label{classgeneral__server_1_1MessageInterpretation_afde630a1b71679a0b2e0a66a836f8592}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_a38dafbc5da41a1b7a0ec60257750309e}{const bool {\bfseries operator==} (const char $\ast$s\-Text\-Stream) const }\label{classgeneral__server_1_1MessageInterpretation_a38dafbc5da41a1b7a0ec60257750309e}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_acfde7766b395fd24a35c8b4832b80d13}{static const sentence\-\_\-end\-\_\-type {\bfseries sentence\-End\-Type} (const char $\ast$s\-String)}\label{classgeneral__server_1_1MessageInterpretation_acfde7766b395fd24a35c8b4832b80d13}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_a85529e8f007bdc34a074bf12a5b106a9}{static const sentence\-\_\-end\-\_\-format {\bfseries sentence\-End\-Format} (const char $\ast$s\-String)}\label{classgeneral__server_1_1MessageInterpretation_a85529e8f007bdc34a074bf12a5b106a9}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_a8b3d26ed73f353ba891b0944a3e4b896}{static const char $\ast$ {\bfseries xsd\-\_\-name} ()}\label{classgeneral__server_1_1MessageInterpretation_a8b3d26ed73f353ba891b0944a3e4b896}
+
+\item 
+\hypertarget{classgeneral__server_1_1MessageInterpretation_af1eb91dad177753f1e9c7e8c89fb14b1}{static void {\bfseries compilation\-Information} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \-I\-Xml\-Base\-Node $\ast$p\-Output)}\label{classgeneral__server_1_1MessageInterpretation_af1eb91dad177753f1e9c7e8c89fb14b1}
+
+\end{DoxyCompactItemize}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+platform\-\_\-general/\-Message\-Interpretation.\-h\item 
+platform\-\_\-general/\-Message\-Interpretation.\-cpp\end{DoxyCompactItemize}

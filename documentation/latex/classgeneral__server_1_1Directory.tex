@@ -1,0 +1,121 @@
+\hypertarget{classgeneral__server_1_1Directory}{\section{general\-\_\-server\-:\-:\-Directory \-Class \-Reference}
+\label{classgeneral__server_1_1Directory}\index{general\-\_\-server\-::\-Directory@{general\-\_\-server\-::\-Directory}}
+}
+\-Inheritance diagram for general\-\_\-server\-:\-:\-Directory\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.966292cm]{classgeneral__server_1_1Directory}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a360fb88f3edf9f4a2209202c5b7da80d}{{\bfseries \-Directory} (const \-I\-Xml\-Library $\ast$p\-Lib, const char $\ast$s\-Full\-Path, const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Parent=\-N\-U\-L\-L, const \hyperlink{classvector}{vector}$<$ const char $\ast$ $>$ $\ast$\-\_\-ext\-\_\-noread=0)}\label{classgeneral__server_1_1Directory_a360fb88f3edf9f4a2209202c5b7da80d}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_aca3cb43ef1346cd7fdfaee751ec447f0}{{\bfseries \-Directory} (const \-I\-Xml\-Library $\ast$p\-Lib, const \hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$p\-Node, const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Root\-Repository)}\label{classgeneral__server_1_1Directory_aca3cb43ef1346cd7fdfaee751ec447f0}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_aa289355e8b0a7122fed0147c8e82120c}{const char $\ast$ {\bfseries dynamic\-File\-System\-Path} (\hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$p\-Sub\-Repository\-Node=0, const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Root\-Repository=0) const }\label{classgeneral__server_1_1Directory_aa289355e8b0a7122fed0147c8e82120c}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a056c84f0986daeab69f3bb4c12bc4121}{const \-T\-Xml\-::transaction\-Result {\bfseries commit\-Create\-Placeholders} (const \-I\-Xml\-Base\-Doc $\ast$p\-Doc, const \hyperlink{classvector}{vector}$<$ \hyperlink{classgeneral__server_1_1TXml}{\-T\-Xml} $\ast$ $>$ $\ast$pv\-T\-Xmls, const \hyperlink{classvector}{vector}$<$ \hyperlink{structgeneral__server_1_1TXml_1_1AffectedNodeDetails}{\-T\-Xml\-::\-Affected\-Node\-Details} $>$ $\ast$pv\-Affected\-Nodes)}\label{classgeneral__server_1_1Directory_a056c84f0986daeab69f3bb4c12bc4121}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_aa413a6b0e87b139bff7433e129b09cad}{const \-T\-Xml\-::transaction\-Result {\bfseries commit\-Swap\-In\-Placeholders} (const \-I\-Xml\-Base\-Doc $\ast$p\-Doc, const \hyperlink{classvector}{vector}$<$ \hyperlink{classgeneral__server_1_1TXml}{\-T\-Xml} $\ast$ $>$ $\ast$pv\-T\-Xmls, const \hyperlink{classvector}{vector}$<$ \hyperlink{structgeneral__server_1_1TXml_1_1AffectedNodeDetails}{\-T\-Xml\-::\-Affected\-Node\-Details} $>$ $\ast$pv\-Affected\-Nodes)}\label{classgeneral__server_1_1Directory_aa413a6b0e87b139bff7433e129b09cad}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_aa9270c2a6707550ac1e3da2d719687ff}{const \-T\-Xml\-::transaction\-Result {\bfseries commit\-Get\-Persistent\-Status} (\-T\-Xml\-::commit\-Status $\ast$cs, \-T\-Xml\-::commit\-Style $\ast$ct)}\label{classgeneral__server_1_1Directory_aa9270c2a6707550ac1e3da2d719687ff}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_ae0c804580c1275910de001d40fad2f26}{const \-T\-Xml\-::transaction\-Result {\bfseries commit\-Set\-Persistent\-Status} (const \-T\-Xml\-::commit\-Status cs, const \-T\-Xml\-::commit\-Style ct)}\label{classgeneral__server_1_1Directory_ae0c804580c1275910de001d40fad2f26}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a9b3776f0de34f4d146da24576fb9292c}{const \-T\-Xml\-::transaction\-Result {\bfseries commit\-Delete\-Transactions} (const \hyperlink{classvector}{vector}$<$ \hyperlink{classgeneral__server_1_1TXml}{\-T\-Xml} $\ast$ $>$ $\ast$pv\-T\-Xmls=0)}\label{classgeneral__server_1_1Directory_a9b3776f0de34f4d146da24576fb9292c}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a45d7d758e5e9507908914133a0e6d791}{const bool {\bfseries can\-Save\-Element\-Only} () const }\label{classgeneral__server_1_1Directory_a45d7d758e5e9507908914133a0e6d791}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a4c91d2c4ba6f647fd2012361cf41f2d7}{const bool {\bfseries should\-Include\-Sub\-Repository} (const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Sub\-Repository) const }\label{classgeneral__server_1_1Directory_a4c91d2c4ba6f647fd2012361cf41f2d7}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_ae29391ad8535569c70cb71626402b16e}{const bool {\bfseries remove\-During\-Sync} () const }\label{classgeneral__server_1_1Directory_ae29391ad8535569c70cb71626402b16e}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a5c7488c3066ffe904554a56254048601}{const char $\ast$ {\bfseries read\-Raw} () const }\label{classgeneral__server_1_1Directory_a5c7488c3066ffe904554a56254048601}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a7523d4a237370868f17e4460d6f0c4fc}{void {\bfseries read\-Valid\-X\-M\-L} (string \&s\-Current\-X\-M\-L) const }\label{classgeneral__server_1_1Directory_a7523d4a237370868f17e4460d6f0c4fc}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a73298e4a7a052d4007198d2a13341613}{int {\bfseries input\-Read\-Callback} (\hyperlink{classgeneral__server_1_1Repository_1_1StreamingContext}{\-Streaming\-Context} $\ast$p\-Streaming\-Context, char $\ast$s\-Buffer, int i\-Len) const }\label{classgeneral__server_1_1Directory_a73298e4a7a052d4007198d2a13341613}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a26571918bb909e8397b7452416cd173e}{void {\bfseries append\-Xml\-To\-\_\-pre\-Cursor} (string \&s\-Current\-X\-M\-L, const bool b\-Is\-Top=\-N\-O\-T\-\_\-\-T\-O\-P) const }\label{classgeneral__server_1_1Directory_a26571918bb909e8397b7452416cd173e}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_abe3671c1d0227a4432bdf7c4081f91db}{void {\bfseries append\-Xml\-To\-\_\-start\-Tag} (string \&s\-Current\-X\-M\-L, const bool b\-Is\-Top=\-N\-O\-T\-\_\-\-T\-O\-P) const }\label{classgeneral__server_1_1Directory_abe3671c1d0227a4432bdf7c4081f91db}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_afb903c2e2dcd8716a86bf08ac8455be0}{void {\bfseries append\-Xml\-To\-\_\-end\-Tag} (string \&s\-Current\-X\-M\-L, const bool b\-Is\-Top=\-N\-O\-T\-\_\-\-T\-O\-P) const }\label{classgeneral__server_1_1Directory_afb903c2e2dcd8716a86bf08ac8455be0}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a9fa1ba5dff49d16f1b486d70b498bfd8}{const \-Repository\-::repository\-Type {\bfseries type} () const }\label{classgeneral__server_1_1Directory_a9fa1ba5dff49d16f1b486d70b498bfd8}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a19d3ae66bd7601fa097c115416b0b082}{const \-T\-Xml\-::transaction\-Result {\bfseries create\-Save\-Tree\-Placeholder} (const bool b\-Add\-Placeholder\-Prefix=true)}\label{classgeneral__server_1_1Directory_a19d3ae66bd7601fa097c115416b0b082}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a8dce25d2f8665cf1fd87be2d74907e1f}{const \-T\-Xml\-::transaction\-Result {\bfseries swap\-In\-Save\-Tree\-Placeholder} ()}\label{classgeneral__server_1_1Directory_a8dce25d2f8665cf1fd87be2d74907e1f}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a2fd1762b16b3a86a140599ac1668e62d}{const \-T\-Xml\-::transaction\-Result {\bfseries create\-Element\-Only\-Placeholder} ()}\label{classgeneral__server_1_1Directory_a2fd1762b16b3a86a140599ac1668e62d}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a1faafb78ae165dba44f149c410daa12e}{const \-T\-Xml\-::transaction\-Result {\bfseries swap\-In\-Element\-Only\-Placeholder} ()}\label{classgeneral__server_1_1Directory_a1faafb78ae165dba44f149c410daa12e}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_adeccfbc0c702cddaf7489f67904f22a1}{const \-T\-Xml\-::transaction\-Result {\bfseries sync\-Immediate\-Children} ()}\label{classgeneral__server_1_1Directory_adeccfbc0c702cddaf7489f67904f22a1}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a64b5e37c828666190b791e58bbe0e8eb}{const \-T\-Xml\-::transaction\-Result {\bfseries apply\-Transaction} (\hyperlink{classgeneral__server_1_1TXml}{\-T\-Xml} $\ast$t, \-I\-Xml\-Base\-Node $\ast$p\-Serialisation\-Node=0)}\label{classgeneral__server_1_1Directory_a64b5e37c828666190b791e58bbe0e8eb}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_ab4c94dd0cb30bff9ee83d2bb1112cece}{const \-T\-Xml\-::transaction\-Result {\bfseries rollback} ()}\label{classgeneral__server_1_1Directory_ab4c94dd0cb30bff9ee83d2bb1112cece}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a25d612ebc8cb4f070b95cc1961a48361}{static const bool {\bfseries gimme} (const char $\ast$s\-File\-Path)}\label{classgeneral__server_1_1Directory_a25d612ebc8cb4f070b95cc1961a48361}
+
+\item 
+\hypertarget{classgeneral__server_1_1Directory_afd6b847b916d0d6eadbd09ed2a3ae9d5}{static void {\bfseries compilation\-Information} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \-I\-Xml\-Base\-Node $\ast$p\-Output)}\label{classgeneral__server_1_1Directory_afd6b847b916d0d6eadbd09ed2a3ae9d5}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a8a5ad1b19c50b88787e8a358c35d2db4}{static const char $\ast$ {\bfseries m\-\_\-s\-Type\-Name} = \char`\"{}\-Directory\char`\"{}}\label{classgeneral__server_1_1Directory_a8a5ad1b19c50b88787e8a358c35d2db4}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Directory_ac46702a41104262e0b9629ef1ef795bc}{void {\bfseries populate\-Children} (const bool b\-Force=false)}\label{classgeneral__server_1_1Directory_ac46702a41104262e0b9629ef1ef795bc}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Directory_a9ef42c6f10d908af76e7f2468c755362}{static const \*
+\-Repository\-::repository\-Type {\bfseries m\-\_\-i\-Repository\-Type} = t\-Directory}\label{classgeneral__server_1_1Directory_a9ef42c6f10d908af76e7f2468c755362}
+
+\end{DoxyCompactItemize}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+platform\-\_\-general/\-File\-System.\-h\item 
+platform\-\_\-general/\-File\-System.\-cpp\end{DoxyCompactItemize}

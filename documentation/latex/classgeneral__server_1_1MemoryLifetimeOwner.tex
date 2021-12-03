@@ -1,0 +1,106 @@
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner}{\section{general\-\_\-server\-:\-:\-Memory\-Lifetime\-Owner \-Class \-Reference}
+\label{classgeneral__server_1_1MemoryLifetimeOwner}\index{general\-\_\-server\-::\-Memory\-Lifetime\-Owner@{general\-\_\-server\-::\-Memory\-Lifetime\-Owner}}
+}
+\-Inheritance diagram for general\-\_\-server\-:\-:\-Memory\-Lifetime\-Owner\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.166667cm]{classgeneral__server_1_1MemoryLifetimeOwner}
+\end{center}
+\end{figure}
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgeneral__server_1_1MemoryLifetimeOwner_1_1Allocation}{\-Allocation}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries allocation\-Type} \{ {\bfseries allocationtype\-\_\-object}, 
+{\bfseries allocationtype\-\_\-malloc}
+ \}
+\item 
+enum {\bfseries lifetime\-Type} \{ {\bfseries lifetime\-\_\-unspecified} =  0, 
+{\bfseries lifetime\-\_\-parent}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_ad277e469bf212a35e3ff2b0bac95a108}{const char $\ast$ {\bfseries to\-String\-Memory} () const }\label{classgeneral__server_1_1MemoryLifetimeOwner_ad277e469bf212a35e3ff2b0bac95a108}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a59d4c2ea99fd1116e27ebc97b9c34319}{unsigned int {\bfseries mem\-Allocated} () const }\label{classgeneral__server_1_1MemoryLifetimeOwner_a59d4c2ea99fd1116e27ebc97b9c34319}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_ad1e3f10db3958a202e1f822b9d92cdb3}{static double {\bfseries mem\-Usage\-Operating\-System} ()}\label{classgeneral__server_1_1MemoryLifetimeOwner_ad1e3f10db3958a202e1f822b9d92cdb3}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a304262f847a8bf847b63059ae21c2872}{static double {\bfseries mem\-Usage\-Allocations} ()}\label{classgeneral__server_1_1MemoryLifetimeOwner_a304262f847a8bf847b63059ae21c2872}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_ab9c489f1a1f51fbb972dcae5f103a866}{static void {\bfseries compilation\-Information} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \-I\-Xml\-Base\-Node $\ast$p\-Output)}\label{classgeneral__server_1_1MemoryLifetimeOwner_ab9c489f1a1f51fbb972dcae5f103a866}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a2950bda759cacb309e240133eee2053a}{{\bfseries \-Memory\-Lifetime\-Owner} (\hyperlink{classgeneral__server_1_1MemoryLifetimeOwner}{\-Memory\-Lifetime\-Owner} $\ast$p\-Parent)}\label{classgeneral__server_1_1MemoryLifetimeOwner_a2950bda759cacb309e240133eee2053a}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a73a3202be5844f2d83d1e203e2854a6c}{void {\bfseries add\-Child} (\hyperlink{classgeneral__server_1_1MemoryLifetimeOwner}{\-Memory\-Lifetime\-Owner} $\ast$p\-Child)}\label{classgeneral__server_1_1MemoryLifetimeOwner_a73a3202be5844f2d83d1e203e2854a6c}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a5f7d7a1a467f23b9c23d020d128e8048}{void {\bfseries remove\-Child} (\hyperlink{classgeneral__server_1_1MemoryLifetimeOwner}{\-Memory\-Lifetime\-Owner} $\ast$p\-Child)}\label{classgeneral__server_1_1MemoryLifetimeOwner_a5f7d7a1a467f23b9c23d020d128e8048}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_ac3338195b955b88a55f1b71de3d72ac0}{{\footnotesize template$<$class New\-Instance $>$ }\\\-New\-Instance $\ast$ {\bfseries gs\-\_\-new} (\-New\-Instance $\ast$p\-New\-Instance, const char $\ast$s\-Reason=0, lifetime\-Type i\-Lifetime\-Type=lifetime\-\_\-parent)}\label{classgeneral__server_1_1MemoryLifetimeOwner_ac3338195b955b88a55f1b71de3d72ac0}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a94bc109ea46522342e8b5ff793931616}{{\footnotesize template$<$class New\-Instance $>$ }\\void {\bfseries gs\-\_\-delete} (\hyperlink{classgeneral__server_1_1MemoryLifetimeOwner}{\-Memory\-Lifetime\-Owner} $\ast$p\-Old\-Instance)}\label{classgeneral__server_1_1MemoryLifetimeOwner_a94bc109ea46522342e8b5ff793931616}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a8f1b47366a6b8b7b0297e1a1faf37370}{void $\ast$ {\bfseries gs\-\_\-malloc} (size\-\_\-t i\-Amount, const char $\ast$s\-Reason)}\label{classgeneral__server_1_1MemoryLifetimeOwner_a8f1b47366a6b8b7b0297e1a1faf37370}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_af1c8e66a17137d30c3656ea6dd4751f6}{void {\bfseries gs\-\_\-free} (void $\ast$p\-Block)}\label{classgeneral__server_1_1MemoryLifetimeOwner_af1c8e66a17137d30c3656ea6dd4751f6}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a655d5a0128925e36b203c146f6ebd709}{char $\ast$ {\bfseries gs\-\_\-malloc\-\_\-char} (size\-\_\-t i\-Amount, const char $\ast$s\-Reason)}\label{classgeneral__server_1_1MemoryLifetimeOwner_a655d5a0128925e36b203c146f6ebd709}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_aece47b6a736d438e8618671023e52d52}{\hyperlink{classgeneral__server_1_1MemoryLifetimeOwner}{\-Memory\-Lifetime\-Owner} $\ast$ {\bfseries m\-\_\-p\-M\-M\-Parent}}\label{classgeneral__server_1_1MemoryLifetimeOwner_aece47b6a736d438e8618671023e52d52}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a45865566db219344575afaa8df9292d5}{\hyperlink{classvector}{vector}$<$ \hyperlink{structgeneral__server_1_1MemoryLifetimeOwner_1_1Allocation}{\-Allocation} $>$ {\bfseries m\-\_\-v\-Allocations}}\label{classgeneral__server_1_1MemoryLifetimeOwner_a45865566db219344575afaa8df9292d5}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a3b106e790f249c817c03c64c7a86042e}{list$<$ \hyperlink{classgeneral__server_1_1MemoryLifetimeOwner}{\-Memory\-Lifetime\-Owner} $\ast$ $>$ {\bfseries m\-\_\-l\-Children}}\label{classgeneral__server_1_1MemoryLifetimeOwner_a3b106e790f249c817c03c64c7a86042e}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a3f2349fa61f8b19235384f6127e53c68}{static \hyperlink{classgeneral__server_1_1MemoryLifetimeOwner}{\-Memory\-Lifetime\-Owner} $\ast$ {\bfseries m\-\_\-p\-Singleton} = 0}\label{classgeneral__server_1_1MemoryLifetimeOwner_a3f2349fa61f8b19235384f6127e53c68}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_aec5a6e47a8482c1f8f80af5c16b96b73}{class {\bfseries \-Memory\-Blocks\-Un\-Managed}}\label{classgeneral__server_1_1MemoryLifetimeOwner_aec5a6e47a8482c1f8f80af5c16b96b73}
+
+\item 
+\hypertarget{classgeneral__server_1_1MemoryLifetimeOwner_a992c638551243aa0ee7b50d84f4fdf54}{class {\bfseries \-Main}}\label{classgeneral__server_1_1MemoryLifetimeOwner_a992c638551243aa0ee7b50d84f4fdf54}
+
+\end{DoxyCompactItemize}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+platform\-\_\-general/\-Memory\-Lifetime\-Owner.\-h\item 
+platform\-\_\-general/\-Memory\-Lifetime\-Owner.\-cpp\end{DoxyCompactItemize}

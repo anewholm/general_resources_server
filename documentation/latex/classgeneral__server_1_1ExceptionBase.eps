@@ -1,0 +1,696 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 2923.433875
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.171032 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 126 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text `arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col `arg1' to `arg2' of row `arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(general_server::ExceptionBase) cw
+(general_server::AttributeRequired) cw
+(general_server::BlankDocument) cw
+(general_server::BlankInputStream) cw
+(general_server::CannotConnectSocket) cw
+(general_server::CannotConvertAbsoluteHREFToXPathWithoutRoot) cw
+(general_server::CannotCreateInTmpNode) cw
+(general_server::CannotCreateSocket) cw
+(general_server::CannotReconcileDefaultNamespace) cw
+(general_server::CannotResolveHostname) cw
+(general_server::CannotRunXPathWithoutNamespaceCache) cw
+(general_server::CannotSendData) cw
+(general_server::CapabilityNotSupported) cw
+(general_server::CDATAEndNotFound) cw
+(general_server::ConversationFailedToRXSLInput) cw
+(general_server::DatabaseClassNameRequired) cw
+(general_server::DatabaseNodeServerObjectHasNoXSDName) cw
+(general_server::DataSizeAbort) cw
+(general_server::DateFormatResultTooLong) cw
+(general_server::DocumentMismatchForNamespaceCacheCopyOperation) cw
+(general_server::DocumentNotValid) cw
+(general_server::DocumentParseError) cw
+(general_server::DuplicateDatabaseClass) cw
+(general_server::DynamicPathToNonRepositoryNode) cw
+(general_server::ExceptionClassNotAllowed) cw
+(general_server::ExceptionClassRequired) cw
+(general_server::FailedToCompileStylesheet) cw
+(general_server::FailedToOpenSyncDirectory) cw
+(general_server::FailedToParseDate) cw
+(general_server::FailedToRemoveOldItem) cw
+(general_server::FailedToResolveXSLIncludePath) cw
+(general_server::FailedToSwapInPlaceholder) cw
+(general_server::FileNotFound) cw
+(general_server::HardLinkToNowhere) cw
+(general_server::InterfaceNotSupported) cw
+(general_server::InvalidCommitStatus) cw
+(general_server::InvalidCommitStatusName) cw
+(general_server::InvalidCommitStyle) cw
+(general_server::InvalidCommitStyleName) cw
+(general_server::InvalidProtocol) cw
+(general_server::InvalidXML) cw
+(general_server::InvalidXMLName) cw
+(general_server::LoginFailed) cw
+(general_server::MemoryBlockNotFound) cw
+(general_server::MemoryBlocksUnManaged) cw
+(general_server::MemoryChildrenUnManaged) cw
+(general_server::MIMessageTransformationRequired) cw
+(general_server::MIPrimaryOutputTransformationRequired) cw
+(general_server::MismatchedNamespacePrefixAssociation) cw
+(general_server::MissingDefaultNamespaceDecleration) cw
+(general_server::MissingPathToFile) cw
+(general_server::MissingRepositoryNameAttribute) cw
+(general_server::MultipleResourceFound) cw
+(general_server::MultipleRootNodes) cw
+(general_server::MultipleSocketErrors) cw
+(general_server::NamespaceIsInvalid) cw
+(general_server::NativeLibraryClassRequired) cw
+(general_server::NoDatabaseSelected) cw
+(general_server::NodeAddableAccessDenied) cw
+(general_server::NodeWriteableAccessDenied) cw
+(general_server::NoDocumentNodeFound) cw
+(general_server::NoEMOAvailableForExtension) cw
+(general_server::NoFilterTargetDocument) cw
+(general_server::NonTransientNode) cw
+(general_server::NoOuputDocument) cw
+(general_server::NoOutputRootNode) cw
+(general_server::NoRootNodeFound) cw
+(general_server::NoServersFoundInMainDatabase) cw
+(general_server::NoStylesheet) cw
+(general_server::NoTmpNodeFound) cw
+(general_server::OutOfMemory) cw
+(general_server::PipeFailure) cw
+(general_server::ProtocolNotSupported) cw
+(general_server::RelationalDatabaseConnectionFailed) cw
+(general_server::ReplaceNodeRequiresConstantXMLID) cw
+(general_server::RepositoryTypeMissing) cw
+(general_server::RepositoryTypeUnknown) cw
+(general_server::ResourceNotFound) cw
+(general_server::ResourcesCopyFailure) cw
+(general_server::ResponseTagMalformed) cw
+(general_server::SemaphoreFailure) cw
+(general_server::ServiceCannotListen) cw
+(general_server::ServiceMIsRequired) cw
+(general_server::ServicePortRequired) cw
+(general_server::SessionRequired) cw
+(general_server::StandardException) cw
+(general_server::SubRepositoryNotFoundForNode) cw
+(general_server::ThreadTypeUnknown) cw
+(general_server::TransformFailed) cw
+(general_server::TransformWithoutCurrentNode) cw
+(general_server::TransientNode) cw
+(general_server::TXmlApplicationFailed) cw
+(general_server::TXmlCannotOpenTransactionStore) cw
+(general_server::TXmlFailedToParseTransactionXML) cw
+(general_server::TXmlInvalid) cw
+(general_server::TXmlRequiredNodeNotFound) cw
+(general_server::TXmlSerialisationParentNull) cw
+(general_server::TXmlTransformNotSupportedFor) cw
+(general_server::TXmlUnknownTransactionType) cw
+(general_server::TXmlVolatileResult) cw
+(general_server::UnknownFileType) cw
+(general_server::UnknownHardlinkPolicy) cw
+(general_server::UnkownSecurityStrategyName) cw
+(general_server::UnregisteredDatabaseClass) cw
+(general_server::UnWinder) cw
+(general_server::Up) cw
+(general_server::UserDoesNotHavePermission) cw
+(general_server::ValidityCheckFailure) cw
+(general_server::WrongIssuerSecurityContext) cw
+(general_server::XmlGenericException) cw
+(general_server::XMLID_DuplicationIssue) cw
+(general_server::XmlIdRedefined) cw
+(general_server::XMLParseFailedAt) cw
+(general_server::XmlParserNamespaceNotDeclared) cw
+(general_server::XPathException) cw
+(general_server::XPathFunctionWrongArgumentType) cw
+(general_server::XPathMultipleNodes) cw
+(general_server::XPathReturnedEmptyResultSet) cw
+(general_server::XPathStringArgumentRequired) cw
+(general_server::XPathTypeUnhandled) cw
+(general_server::XSLElementException) cw
+(general_server::XSLStylesheetNodeNotFound) cw
+(general_server::XSLTException) cw
+(general_server::XSLTExtensionNotFound) cw
+(general_server::ZeroDocument) cw
+(general_server::ZeroInputStream) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (general_server::ExceptionBase) 0.000000 125.000000 box
+ (general_server::AttributeRequired) 1.000000 124.000000 box
+ (general_server::BlankDocument) 1.000000 123.000000 box
+ (general_server::BlankInputStream) 1.000000 122.000000 box
+ (general_server::CannotConnectSocket) 1.000000 121.000000 box
+ (general_server::CannotConvertAbsoluteHREFToXPathWithoutRoot) 1.000000 120.000000 box
+ (general_server::CannotCreateInTmpNode) 1.000000 119.000000 box
+ (general_server::CannotCreateSocket) 1.000000 118.000000 box
+ (general_server::CannotReconcileDefaultNamespace) 1.000000 117.000000 box
+ (general_server::CannotResolveHostname) 1.000000 116.000000 box
+ (general_server::CannotRunXPathWithoutNamespaceCache) 1.000000 115.000000 box
+ (general_server::CannotSendData) 1.000000 114.000000 box
+ (general_server::CapabilityNotSupported) 1.000000 113.000000 box
+ (general_server::CDATAEndNotFound) 1.000000 112.000000 box
+ (general_server::ConversationFailedToRXSLInput) 1.000000 111.000000 box
+ (general_server::DatabaseClassNameRequired) 1.000000 110.000000 box
+ (general_server::DatabaseNodeServerObjectHasNoXSDName) 1.000000 109.000000 box
+ (general_server::DataSizeAbort) 1.000000 108.000000 box
+ (general_server::DateFormatResultTooLong) 1.000000 107.000000 box
+ (general_server::DocumentMismatchForNamespaceCacheCopyOperation) 1.000000 106.000000 box
+ (general_server::DocumentNotValid) 1.000000 105.000000 box
+ (general_server::DocumentParseError) 1.000000 104.000000 box
+ (general_server::DuplicateDatabaseClass) 1.000000 103.000000 box
+ (general_server::DynamicPathToNonRepositoryNode) 1.000000 102.000000 box
+ (general_server::ExceptionClassNotAllowed) 1.000000 101.000000 box
+ (general_server::ExceptionClassRequired) 1.000000 100.000000 box
+ (general_server::FailedToCompileStylesheet) 1.000000 99.000000 box
+ (general_server::FailedToOpenSyncDirectory) 1.000000 98.000000 box
+ (general_server::FailedToParseDate) 1.000000 97.000000 box
+ (general_server::FailedToRemoveOldItem) 1.000000 96.000000 box
+ (general_server::FailedToResolveXSLIncludePath) 1.000000 95.000000 box
+ (general_server::FailedToSwapInPlaceholder) 1.000000 94.000000 box
+ (general_server::FileNotFound) 1.000000 93.000000 box
+ (general_server::HardLinkToNowhere) 1.000000 92.000000 box
+ (general_server::InterfaceNotSupported) 1.000000 91.000000 box
+ (general_server::InvalidCommitStatus) 1.000000 90.000000 box
+ (general_server::InvalidCommitStatusName) 1.000000 89.000000 box
+ (general_server::InvalidCommitStyle) 1.000000 88.000000 box
+ (general_server::InvalidCommitStyleName) 1.000000 87.000000 box
+ (general_server::InvalidProtocol) 1.000000 86.000000 box
+ (general_server::InvalidXML) 1.000000 85.000000 box
+ (general_server::InvalidXMLName) 1.000000 84.000000 box
+ (general_server::LoginFailed) 1.000000 83.000000 box
+ (general_server::MemoryBlockNotFound) 1.000000 82.000000 box
+ (general_server::MemoryBlocksUnManaged) 1.000000 81.000000 box
+ (general_server::MemoryChildrenUnManaged) 1.000000 80.000000 box
+ (general_server::MIMessageTransformationRequired) 1.000000 79.000000 box
+ (general_server::MIPrimaryOutputTransformationRequired) 1.000000 78.000000 box
+ (general_server::MismatchedNamespacePrefixAssociation) 1.000000 77.000000 box
+ (general_server::MissingDefaultNamespaceDecleration) 1.000000 76.000000 box
+ (general_server::MissingPathToFile) 1.000000 75.000000 box
+ (general_server::MissingRepositoryNameAttribute) 1.000000 74.000000 box
+ (general_server::MultipleResourceFound) 1.000000 73.000000 box
+ (general_server::MultipleRootNodes) 1.000000 72.000000 box
+ (general_server::MultipleSocketErrors) 1.000000 71.000000 box
+ (general_server::NamespaceIsInvalid) 1.000000 70.000000 box
+ (general_server::NativeLibraryClassRequired) 1.000000 69.000000 box
+ (general_server::NoDatabaseSelected) 1.000000 68.000000 box
+ (general_server::NodeAddableAccessDenied) 1.000000 67.000000 box
+ (general_server::NodeWriteableAccessDenied) 1.000000 66.000000 box
+ (general_server::NoDocumentNodeFound) 1.000000 65.000000 box
+ (general_server::NoEMOAvailableForExtension) 1.000000 64.000000 box
+ (general_server::NoFilterTargetDocument) 1.000000 63.000000 box
+ (general_server::NonTransientNode) 1.000000 62.000000 box
+ (general_server::NoOuputDocument) 1.000000 61.000000 box
+ (general_server::NoOutputRootNode) 1.000000 60.000000 box
+ (general_server::NoRootNodeFound) 1.000000 59.000000 box
+ (general_server::NoServersFoundInMainDatabase) 1.000000 58.000000 box
+ (general_server::NoStylesheet) 1.000000 57.000000 box
+ (general_server::NoTmpNodeFound) 1.000000 56.000000 box
+ (general_server::OutOfMemory) 1.000000 55.000000 box
+ (general_server::PipeFailure) 1.000000 54.000000 box
+1.000000 54.000000 mark
+ (general_server::ProtocolNotSupported) 1.000000 53.000000 box
+ (general_server::RelationalDatabaseConnectionFailed) 1.000000 52.000000 box
+ (general_server::ReplaceNodeRequiresConstantXMLID) 1.000000 51.000000 box
+ (general_server::RepositoryTypeMissing) 1.000000 50.000000 box
+ (general_server::RepositoryTypeUnknown) 1.000000 49.000000 box
+ (general_server::ResourceNotFound) 1.000000 48.000000 box
+ (general_server::ResourcesCopyFailure) 1.000000 47.000000 box
+ (general_server::ResponseTagMalformed) 1.000000 46.000000 box
+ (general_server::SemaphoreFailure) 1.000000 45.000000 box
+ (general_server::ServiceCannotListen) 1.000000 44.000000 box
+ (general_server::ServiceMIsRequired) 1.000000 43.000000 box
+ (general_server::ServicePortRequired) 1.000000 42.000000 box
+ (general_server::SessionRequired) 1.000000 41.000000 box
+ (general_server::StandardException) 1.000000 40.000000 box
+ (general_server::SubRepositoryNotFoundForNode) 1.000000 39.000000 box
+ (general_server::ThreadTypeUnknown) 1.000000 38.000000 box
+ (general_server::TransformFailed) 1.000000 37.000000 box
+ (general_server::TransformWithoutCurrentNode) 1.000000 36.000000 box
+ (general_server::TransientNode) 1.000000 35.000000 box
+ (general_server::TXmlApplicationFailed) 1.000000 34.000000 box
+ (general_server::TXmlCannotOpenTransactionStore) 1.000000 33.000000 box
+ (general_server::TXmlFailedToParseTransactionXML) 1.000000 32.000000 box
+ (general_server::TXmlInvalid) 1.000000 31.000000 box
+ (general_server::TXmlRequiredNodeNotFound) 1.000000 30.000000 box
+ (general_server::TXmlSerialisationParentNull) 1.000000 29.000000 box
+ (general_server::TXmlTransformNotSupportedFor) 1.000000 28.000000 box
+ (general_server::TXmlUnknownTransactionType) 1.000000 27.000000 box
+ (general_server::TXmlVolatileResult) 1.000000 26.000000 box
+ (general_server::UnknownFileType) 1.000000 25.000000 box
+ (general_server::UnknownHardlinkPolicy) 1.000000 24.000000 box
+ (general_server::UnkownSecurityStrategyName) 1.000000 23.000000 box
+ (general_server::UnregisteredDatabaseClass) 1.000000 22.000000 box
+ (general_server::UnWinder) 1.000000 21.000000 box
+ (general_server::Up) 1.000000 20.000000 box
+ (general_server::UserDoesNotHavePermission) 1.000000 19.000000 box
+ (general_server::ValidityCheckFailure) 1.000000 18.000000 box
+ (general_server::WrongIssuerSecurityContext) 1.000000 17.000000 box
+ (general_server::XmlGenericException) 1.000000 16.000000 box
+ (general_server::XMLID_DuplicationIssue) 1.000000 15.000000 box
+ (general_server::XmlIdRedefined) 1.000000 14.000000 box
+ (general_server::XMLParseFailedAt) 1.000000 13.000000 box
+ (general_server::XmlParserNamespaceNotDeclared) 1.000000 12.000000 box
+ (general_server::XPathException) 1.000000 11.000000 box
+ (general_server::XPathFunctionWrongArgumentType) 1.000000 10.000000 box
+ (general_server::XPathMultipleNodes) 1.000000 9.000000 box
+ (general_server::XPathReturnedEmptyResultSet) 1.000000 8.000000 box
+ (general_server::XPathStringArgumentRequired) 1.000000 7.000000 box
+ (general_server::XPathTypeUnhandled) 1.000000 6.000000 box
+ (general_server::XSLElementException) 1.000000 5.000000 box
+ (general_server::XSLStylesheetNodeNotFound) 1.000000 4.000000 box
+ (general_server::XSLTException) 1.000000 3.000000 box
+ (general_server::XSLTExtensionNotFound) 1.000000 2.000000 box
+ (general_server::ZeroDocument) 1.000000 1.000000 box
+ (general_server::ZeroInputStream) 1.000000 0.000000 box
+
+% ----- relations -----
+
+solid
+1 0.000000 124.250000 out
+solid
+0 0.000000 124.500000 hedge
+solid
+0 0.000000 123.500000 hedge
+solid
+0 0.000000 122.500000 hedge
+solid
+0 0.000000 121.500000 hedge
+solid
+0 0.000000 120.500000 hedge
+solid
+0 0.000000 119.500000 hedge
+solid
+0 0.000000 118.500000 hedge
+solid
+0 0.000000 117.500000 hedge
+solid
+0 0.000000 116.500000 hedge
+solid
+0 0.000000 115.500000 hedge
+solid
+0 0.000000 114.500000 hedge
+solid
+0 0.000000 113.500000 hedge
+solid
+0 0.000000 112.500000 hedge
+solid
+0 0.000000 111.500000 hedge
+solid
+0 0.000000 110.500000 hedge
+solid
+0 0.000000 109.500000 hedge
+solid
+0 0.000000 108.500000 hedge
+solid
+0 0.000000 107.500000 hedge
+solid
+0 0.000000 106.500000 hedge
+solid
+0 0.000000 105.500000 hedge
+solid
+0 0.000000 104.500000 hedge
+solid
+0 0.000000 103.500000 hedge
+solid
+0 0.000000 102.500000 hedge
+solid
+0 0.000000 101.500000 hedge
+solid
+0 0.000000 100.500000 hedge
+solid
+0 0.000000 99.500000 hedge
+solid
+0 0.000000 98.500000 hedge
+solid
+0 0.000000 97.500000 hedge
+solid
+0 0.000000 96.500000 hedge
+solid
+0 0.000000 95.500000 hedge
+solid
+0 0.000000 94.500000 hedge
+solid
+0 0.000000 93.500000 hedge
+solid
+0 0.000000 92.500000 hedge
+solid
+0 0.000000 91.500000 hedge
+solid
+0 0.000000 90.500000 hedge
+solid
+0 0.000000 89.500000 hedge
+solid
+0 0.000000 88.500000 hedge
+solid
+0 0.000000 87.500000 hedge
+solid
+0 0.000000 86.500000 hedge
+solid
+0 0.000000 85.500000 hedge
+solid
+0 0.000000 84.500000 hedge
+solid
+0 0.000000 83.500000 hedge
+solid
+0 0.000000 82.500000 hedge
+solid
+0 0.000000 81.500000 hedge
+solid
+0 0.000000 80.500000 hedge
+solid
+0 0.000000 79.500000 hedge
+solid
+0 0.000000 78.500000 hedge
+solid
+0 0.000000 77.500000 hedge
+solid
+0 0.000000 76.500000 hedge
+solid
+0 0.000000 75.500000 hedge
+solid
+0 0.000000 74.500000 hedge
+solid
+0 0.000000 73.500000 hedge
+solid
+0 0.000000 72.500000 hedge
+solid
+0 0.000000 71.500000 hedge
+solid
+0 0.000000 70.500000 hedge
+solid
+0 0.000000 69.500000 hedge
+solid
+0 0.000000 68.500000 hedge
+solid
+0 0.000000 67.500000 hedge
+solid
+0 0.000000 66.500000 hedge
+solid
+0 0.000000 65.500000 hedge
+solid
+0 0.000000 64.500000 hedge
+solid
+0 0.000000 63.500000 hedge
+solid
+0 0.000000 62.500000 hedge
+solid
+0 0.000000 61.500000 hedge
+solid
+0 0.000000 60.500000 hedge
+solid
+0 0.000000 59.500000 hedge
+solid
+0 0.000000 58.500000 hedge
+solid
+0 0.000000 57.500000 hedge
+solid
+0 0.000000 56.500000 hedge
+solid
+0 0.000000 55.500000 hedge
+solid
+0 0.000000 54.500000 hedge
+solid
+0 0.000000 53.500000 hedge
+solid
+0 0.000000 52.500000 hedge
+solid
+0 0.000000 51.500000 hedge
+solid
+0 0.000000 50.500000 hedge
+solid
+0 0.000000 49.500000 hedge
+solid
+0 0.000000 48.500000 hedge
+solid
+0 0.000000 47.500000 hedge
+solid
+0 0.000000 46.500000 hedge
+solid
+0 0.000000 45.500000 hedge
+solid
+0 0.000000 44.500000 hedge
+solid
+0 0.000000 43.500000 hedge
+solid
+0 0.000000 42.500000 hedge
+solid
+0 0.000000 41.500000 hedge
+solid
+0 0.000000 40.500000 hedge
+solid
+0 0.000000 39.500000 hedge
+solid
+0 0.000000 38.500000 hedge
+solid
+0 0.000000 37.500000 hedge
+solid
+0 0.000000 36.500000 hedge
+solid
+0 0.000000 35.500000 hedge
+solid
+0 0.000000 34.500000 hedge
+solid
+0 0.000000 33.500000 hedge
+solid
+0 0.000000 32.500000 hedge
+solid
+0 0.000000 31.500000 hedge
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
+solid
+0 0.000000 27.500000 hedge
+solid
+0 0.000000 26.500000 hedge
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 125.000000 0.500000 vedge

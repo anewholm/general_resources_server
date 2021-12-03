@@ -1,0 +1,91 @@
+\hypertarget{classgeneral__server_1_1SecurityContext}{\section{general\-\_\-server\-:\-:\-Security\-Context \-Class \-Reference}
+\label{classgeneral__server_1_1SecurityContext}\index{general\-\_\-server\-::\-Security\-Context@{general\-\_\-server\-::\-Security\-Context}}
+}
+\-Inheritance diagram for general\-\_\-server\-:\-:\-Security\-Context\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgeneral__server_1_1SecurityContext}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries security\-Strategy} \{ {\bfseries unix\-Security\-Strategy} =  1, 
+{\bfseries access\-Control\-List}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_addfc0f6b4a928878b23e2dc72eb1afcb}{const char $\ast$ {\bfseries login\-\_\-trusted} (const char $\ast$s\-User\-Id)}\label{classgeneral__server_1_1SecurityContext_addfc0f6b4a928878b23e2dc72eb1afcb}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_aa1044e06c162c036536295e7d21d9e85}{void {\bfseries logout} ()}\label{classgeneral__server_1_1SecurityContext_aa1044e06c162c036536295e7d21d9e85}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_aa3fbc2ce2bd52e6baf3562279a4df5ae}{void {\bfseries masquerade} (const char $\ast$s\-User\-Id)}\label{classgeneral__server_1_1SecurityContext_aa3fbc2ce2bd52e6baf3562279a4df5ae}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a54914ba4a59c903d0c43956fd3af4e07}{const char $\ast$ {\bfseries unmasquerade} ()}\label{classgeneral__server_1_1SecurityContext_a54914ba4a59c903d0c43956fd3af4e07}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_acdd12447ea9926449e0a494fefc0e66e}{bool {\bfseries enabled} () const }\label{classgeneral__server_1_1SecurityContext_acdd12447ea9926449e0a494fefc0e66e}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a90c11c3618a89ebee9a37d2e8abbd9a3}{void {\bfseries enable} ()}\label{classgeneral__server_1_1SecurityContext_a90c11c3618a89ebee9a37d2e8abbd9a3}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a59b70288afc64b9ddec25a38e08ca2f6}{void {\bfseries disable} ()}\label{classgeneral__server_1_1SecurityContext_a59b70288afc64b9ddec25a38e08ca2f6}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a071241da8dbba404a2a910785f36d9c8}{const char $\ast$ {\bfseries userid} () const }\label{classgeneral__server_1_1SecurityContext_a071241da8dbba404a2a910785f36d9c8}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a977935f32d57804a68723445bcb40cd9}{const bool {\bfseries is\-User} (const char $\ast$s\-User\-Id) const }\label{classgeneral__server_1_1SecurityContext_a977935f32d57804a68723445bcb40cd9}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a2fbddf57d77e0c1f4b88f1f28bedd7e5}{const bool {\bfseries is\-Root} () const }\label{classgeneral__server_1_1SecurityContext_a2fbddf57d77e0c1f4b88f1f28bedd7e5}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_ab9dccaca932529f26807d036eb0f00a6}{const bool $\ast$ {\bfseries has\-Group} (const char $\ast$s\-Group\-Id) const }\label{classgeneral__server_1_1SecurityContext_ab9dccaca932529f26807d036eb0f00a6}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a8f0773151cbab82b828a0effabccccb9}{\-Security\-Context\-::security\-Strategy {\bfseries parse\-Security\-Strategy} (const char $\ast$s\-Security\-Strategy)}\label{classgeneral__server_1_1SecurityContext_a8f0773151cbab82b828a0effabccccb9}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a5d34a380ace7f61716d358b5b7453b41}{static void {\bfseries compilation\-Information} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \-I\-Xml\-Base\-Node $\ast$p\-Output)}\label{classgeneral__server_1_1SecurityContext_a5d34a380ace7f61716d358b5b7453b41}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_af0f192cc8828c45788e3f0f7a419eb6b}{{\bfseries \-Security\-Context} (const \hyperlink{classgeneral__server_1_1SecurityContext}{\-Security\-Context} \&sec)}\label{classgeneral__server_1_1SecurityContext_af0f192cc8828c45788e3f0f7a419eb6b}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a71c54159cc4f66252c7453b4f199fbcd}{void {\bfseries set\-Query\-Environment} (const \-I\-Xml\-Query\-Environment $\ast$p\-Owner\-Q\-E)}\label{classgeneral__server_1_1SecurityContext_a71c54159cc4f66252c7453b4f199fbcd}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a9b2a15d8e397ce47df906a474d75b4a9}{const char $\ast$ {\bfseries m\-\_\-s\-User\-Id}}\label{classgeneral__server_1_1SecurityContext_a9b2a15d8e397ce47df906a474d75b4a9}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_ae95bd3695d44ea7d51a342a526f57699}{const char $\ast$ {\bfseries m\-\_\-s\-Masquerade\-User\-Id}}\label{classgeneral__server_1_1SecurityContext_ae95bd3695d44ea7d51a342a526f57699}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a7d474527a7aa4926c108037f69bf606f}{\hyperlink{classvector}{vector}$<$ int $>$ {\bfseries m\-\_\-groupids}}\label{classgeneral__server_1_1SecurityContext_a7d474527a7aa4926c108037f69bf606f}
+
+\item 
+\hypertarget{classgeneral__server_1_1SecurityContext_a792ee55d8dd81c271698f7e5b947a08e}{const \-I\-Xml\-Query\-Environment $\ast$ {\bfseries m\-\_\-p\-Owner\-Q\-E}}\label{classgeneral__server_1_1SecurityContext_a792ee55d8dd81c271698f7e5b947a08e}
+
+\end{DoxyCompactItemize}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+platform\-\_\-general/\-Query\-Environment/\-Security\-Context.\-h\item 
+platform\-\_\-general/\-Query\-Environment/\-Security\-Context.\-cpp\end{DoxyCompactItemize}

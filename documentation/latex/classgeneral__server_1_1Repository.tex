@@ -1,0 +1,401 @@
+\hypertarget{classgeneral__server_1_1Repository}{\section{general\-\_\-server\-:\-:\-Repository \-Class \-Reference}
+\label{classgeneral__server_1_1Repository}\index{general\-\_\-server\-::\-Repository@{general\-\_\-server\-::\-Repository}}
+}
+\-Inheritance diagram for general\-\_\-server\-:\-:\-Repository\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.573034cm]{classgeneral__server_1_1Repository}
+\end{center}
+\end{figure}
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgeneral__server_1_1Repository_1_1AffectedRepositoryDetails}{\-Affected\-Repository\-Details}
+\item 
+class \hyperlink{classgeneral__server_1_1Repository_1_1StreamingContext}{\-Streaming\-Context}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Repository_abf0074119eca14a80cb126b576f71ede}{const bool {\bfseries has\-Base\-Path} () const }\label{classgeneral__server_1_1Repository_abf0074119eca14a80cb126b576f71ede}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a81dbb56752aa31ef47fff54a4d75be63}{const bool {\bfseries is\-Readable} () const }\label{classgeneral__server_1_1Repository_a81dbb56752aa31ef47fff54a4d75be63}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a5be102bb424ee2c68bab257451acdb34}{const bool {\bfseries is\-Writeable} () const }\label{classgeneral__server_1_1Repository_a5be102bb424ee2c68bab257451acdb34}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a983cf25cead5cc56a47fd6ab55a54aa0}{const bool {\bfseries is\-Repository\-Node} (const \hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$p\-Node) const }\label{classgeneral__server_1_1Repository_a983cf25cead5cc56a47fd6ab55a54aa0}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_abef4467b5bfcf6656ffc5141bf192838}{const char $\ast$ {\bfseries get\-Repository\-Type\-Name} () const }\label{classgeneral__server_1_1Repository_abef4467b5bfcf6656ffc5141bf192838}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a1095a307a4a7513bf85a7664dddce37d}{void {\bfseries set\-Full\-Path} (const char $\ast$s\-Full\-Path)}\label{classgeneral__server_1_1Repository_a1095a307a4a7513bf85a7664dddce37d}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a203a6e83d145a3b0a79b7895ccefcb5c}{void {\bfseries set\-Dynamic\-Full\-Path} ()}\label{classgeneral__server_1_1Repository_a203a6e83d145a3b0a79b7895ccefcb5c}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a3527b33ac0ddd246fbf48caa081cb7c1}{virtual const char $\ast$ {\bfseries dynamic\-File\-System\-Path} (\hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$p\-Node=0, const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Root\-Repository=0) const }\label{classgeneral__server_1_1Repository_a3527b33ac0ddd246fbf48caa081cb7c1}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_aa7395ca86f67376561b5ba7171bcc3ba}{virtual void {\bfseries save\-From\-Database\-Node} (const char $\ast$s\-Full\-Path=0) const }\label{classgeneral__server_1_1Repository_aa7395ca86f67376561b5ba7171bcc3ba}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a9058ccb6d332c0aa5dfd5ea434b55c67}{virtual const char $\ast$ {\bfseries xml\-From\-Database\-Node} () const }\label{classgeneral__server_1_1Repository_a9058ccb6d332c0aa5dfd5ea434b55c67}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a5cf16c36874fc42e9ff33c801020d083}{const char $\ast$ {\bfseries to\-String} () const }\label{classgeneral__server_1_1Repository_a5cf16c36874fc42e9ff33c801020d083}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a147c9f1796bb4485f0c27abef5a6be64}{const bool {\bfseries in} (const \hyperlink{classvector}{vector}$<$ \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$ $>$ $\ast$p\-Vec) const }\label{classgeneral__server_1_1Repository_a147c9f1796bb4485f0c27abef5a6be64}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_ae6fcc9e499bceccdcc70bd4bce322cfa}{const bool {\bfseries in} (const \hyperlink{classvector}{vector}$<$ \hyperlink{structgeneral__server_1_1Repository_1_1AffectedRepositoryDetails}{\-Affected\-Repository\-Details} $>$ $\ast$p\-Vec) const }\label{classgeneral__server_1_1Repository_ae6fcc9e499bceccdcc70bd4bce322cfa}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_ad83791e158fb5aca43ed5a6eb733167d}{const bool {\bfseries is} (const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Repository) const }\label{classgeneral__server_1_1Repository_ad83791e158fb5aca43ed5a6eb733167d}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a6971bc7973714b9539293b5062c7681c}{virtual const bool {\bfseries can\-Save\-Element\-Only} () const }\label{classgeneral__server_1_1Repository_a6971bc7973714b9539293b5062c7681c}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_aaba65a14fbdedcd3a283b33b77488e2f}{virtual const bool {\bfseries should\-Include\-Sub\-Repository} (const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Sub\-Repository) const }\label{classgeneral__server_1_1Repository_aaba65a14fbdedcd3a283b33b77488e2f}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_aa46f3e3f02b221a589593ec92624f16f}{virtual const bool {\bfseries remove\-During\-Sync} () const }\label{classgeneral__server_1_1Repository_aa46f3e3f02b221a589593ec92624f16f}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a26a77b40f7f6c9c1a40674dfec9b79ef}{virtual const bool {\bfseries include\-In\-X\-M\-L} () const }\label{classgeneral__server_1_1Repository_a26a77b40f7f6c9c1a40674dfec9b79ef}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a3cb59d238f00bcc00bcf13c380276dd6}{virtual const repository\-Type {\bfseries type} () const }\label{classgeneral__server_1_1Repository_a3cb59d238f00bcc00bcf13c380276dd6}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a4dfada667b9f551e90370678e519d6d7}{const char $\ast$ {\bfseries source} () const }\label{classgeneral__server_1_1Repository_a4dfada667b9f551e90370678e519d6d7}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a4ac19e1e14047992b661e87e48415bbc}{const char $\ast$ {\bfseries full\-Path} () const }\label{classgeneral__server_1_1Repository_a4ac19e1e14047992b661e87e48415bbc}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_aa80a87b6b112b2e7515fa9b7c94c7b83}{const char $\ast$ {\bfseries protocol} () const }\label{classgeneral__server_1_1Repository_aa80a87b6b112b2e7515fa9b7c94c7b83}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a3de6fdae655ca15509c775e40c4e4896}{const char $\ast$ {\bfseries name} () const }\label{classgeneral__server_1_1Repository_a3de6fdae655ca15509c775e40c4e4896}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a7d2c5edda95bf349f2abfdaa6c7de9c3}{const char $\ast$ {\bfseries extension} () const }\label{classgeneral__server_1_1Repository_a7d2c5edda95bf349f2abfdaa6c7de9c3}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a27a09188c76bdea75f12be52825e3f3e}{const bool {\bfseries supports\-Streaming} () const }\label{classgeneral__server_1_1Repository_a27a09188c76bdea75f12be52825e3f3e}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a91f45b79938e3b6ed9746759169aa5a5}{const bool {\bfseries supports\-T\-X\-M\-L} () const }\label{classgeneral__server_1_1Repository_a91f45b79938e3b6ed9746759169aa5a5}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a296405e2e5a6b95287f46a6060ff5fc9}{const bool {\bfseries is\-Hierarchy} () const }\label{classgeneral__server_1_1Repository_a296405e2e5a6b95287f46a6060ff5fc9}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a6da2f40a2dbf71c1aea99490b904aded}{virtual void {\bfseries read\-Valid\-X\-M\-L} (string \&s\-Current\-X\-M\-L) const }\label{classgeneral__server_1_1Repository_a6da2f40a2dbf71c1aea99490b904aded}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a2c88512b63e5bf62d94b942ec7a03da6}{virtual const char $\ast$ {\bfseries read\-Raw} () const }\label{classgeneral__server_1_1Repository_a2c88512b63e5bf62d94b942ec7a03da6}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a2f2cca94246ffb23b66db3822ab89ec9}{virtual \hyperlink{classvector}{vector}$<$ char $>$ $\ast$ {\bfseries read\-Binary} () const }\label{classgeneral__server_1_1Repository_a2f2cca94246ffb23b66db3822ab89ec9}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_aeee475cf147943c91091b65b4089834b}{virtual void {\bfseries read\-To\-Nodes} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \-I\-Xml\-Base\-Node $\ast$p\-Output, const char $\ast$s\-X\-Path\-Query, const char $\ast$s\-X\-Path\-Mask=0) const }\label{classgeneral__server_1_1Repository_aeee475cf147943c91091b65b4089834b}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a43549bca8e4ab3374d722a65092adf5e}{virtual \hyperlink{classgeneral__server_1_1Repository_1_1StreamingContext}{\-Streaming\-Context} $\ast$ {\bfseries new\-Streaming\-Context} (\hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Repository)}\label{classgeneral__server_1_1Repository_a43549bca8e4ab3374d722a65092adf5e}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a568aa5178136d15d9b9cddff2bbae423}{virtual int {\bfseries input\-Read\-Callback} (\hyperlink{classgeneral__server_1_1Repository_1_1StreamingContext}{\-Streaming\-Context} $\ast$p\-Streaming\-Context, char $\ast$buffer, int len) const }\label{classgeneral__server_1_1Repository_a568aa5178136d15d9b9cddff2bbae423}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a05aded2eef63079a93b6d1aa389a3f19}{virtual int {\bfseries input\-Close\-Callback} (\hyperlink{classgeneral__server_1_1Repository_1_1StreamingContext}{\-Streaming\-Context} $\ast$p\-Streaming\-Context) const }\label{classgeneral__server_1_1Repository_a05aded2eef63079a93b6d1aa389a3f19}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_add2891439ee828aaf7e2a339b03a8d91}{virtual void {\bfseries append\-Xml\-To\-\_\-pre\-Cursor} (string \&s\-Current\-X\-M\-L, const bool b\-Is\-Top=false) const }\label{classgeneral__server_1_1Repository_add2891439ee828aaf7e2a339b03a8d91}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_adddd0873c81ebc7107dbe5ea2d1cf116}{virtual void {\bfseries append\-Xml\-To\-\_\-start\-Tag} (string \&s\-Current\-X\-M\-L, const bool b\-Is\-Top=false) const }\label{classgeneral__server_1_1Repository_adddd0873c81ebc7107dbe5ea2d1cf116}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a4345458a60d88b5be9e934e58191e38a}{virtual void {\bfseries append\-Xml\-To\-\_\-content} (string \&s\-Current\-X\-M\-L, const bool b\-Is\-Top=false) const }\label{classgeneral__server_1_1Repository_a4345458a60d88b5be9e934e58191e38a}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a11146c2e3f9928a28dd2da40986cb117}{virtual void {\bfseries append\-Xml\-To\-\_\-end\-Tag} (string \&s\-Current\-X\-M\-L, const bool b\-Is\-Top=false) const }\label{classgeneral__server_1_1Repository_a11146c2e3f9928a28dd2da40986cb117}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_ae585c0058a559baaf56f313826661357}{const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$ {\bfseries first\-Child} (const \-Repository\-::repository\-Type i\-Repository\-Type=t\-Unknown\-Repository\-Type) const }\label{classgeneral__server_1_1Repository_ae585c0058a559baaf56f313826661357}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a8e750cfb2ffc96e5b20fcacee49e77c0}{const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$ {\bfseries parent} () const }\label{classgeneral__server_1_1Repository_a8e750cfb2ffc96e5b20fcacee49e77c0}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_af87087285cbc2855c8aec97a6b2a2f8f}{const\-\_\-iterator {\bfseries find} (const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Sub\-Repository) const }\label{classgeneral__server_1_1Repository_af87087285cbc2855c8aec97a6b2a2f8f}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_ae6653e6512c670947f287c2449f12de9}{const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$ {\bfseries next\-Sibling} (const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Repository) const }\label{classgeneral__server_1_1Repository_ae6653e6512c670947f287c2449f12de9}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a7590c019ef21a2d04afcd038508b89d8}{const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$ {\bfseries walk\-Hierarchy} (const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Repository) const }\label{classgeneral__server_1_1Repository_a7590c019ef21a2d04afcd038508b89d8}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_aea65e722f62347a36d2dac92eb366061}{const \-I\-Xml\-Library $\ast$ {\bfseries xml\-Library} () const }\label{classgeneral__server_1_1Repository_aea65e722f62347a36d2dac92eb366061}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a4c7627605e305211ba85d6131cf55d61}{const char $\ast$ {\bfseries xslt\-Module\-Namespace} () const }\label{classgeneral__server_1_1Repository_a4c7627605e305211ba85d6131cf55d61}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a9cea0b1e66b51ded0c25680857e8396a}{const char $\ast$ {\bfseries xslt\-Module\-Prefix} () const }\label{classgeneral__server_1_1Repository_a9cea0b1e66b51ded0c25680857e8396a}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_aa612159371d310b56cd34c985f4d6f73}{const \hyperlink{classgeneral__server_1_1StringMap}{\-String\-Map}\*
+$<$ \-I\-Xsl\-Module\-::\-Xsl\-Module\-Command\-Details $>$ $\ast$ {\bfseries xsl\-Commands} () const }\label{classgeneral__server_1_1Repository_aa612159371d310b56cd34c985f4d6f73}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_ad097e4af9f6a6b5adaf031a25ac431b9}{const \hyperlink{classgeneral__server_1_1StringMap}{\-String\-Map}\*
+$<$ \-I\-Xsl\-Module\-::\-Xsl\-Module\-Function\-Details $>$ $\ast$ {\bfseries xsl\-Functions} () const }\label{classgeneral__server_1_1Repository_ad097e4af9f6a6b5adaf031a25ac431b9}
+
+\item 
+\hypertarget{group__XSLModule-Functions_gaffd1f822af85c5fc69654c77c2e5f6e2}{const char $\ast$ {\bfseries xsl\-Function\-\_\-file\-System\-Path\-To\-X\-Path} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const \-I\-Xsl\-X\-Path\-Function\-Context $\ast$p\-X\-Ctxt, \hyperlink{classgeneral__server_1_1XmlNodeList}{\-Xml\-Node\-List}$<$ const \-I\-Xml\-Base\-Node $>$ $\ast$$\ast$p\-Nodes)}\label{group__XSLModule-Functions_gaffd1f822af85c5fc69654c77c2e5f6e2}
+
+\item 
+\hypertarget{group__XSLModule-Functions_ga6fd492a595c2190d2cdcc15d73600678}{const char $\ast$ {\bfseries xsl\-Function\-\_\-rxsl} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const \-I\-Xsl\-X\-Path\-Function\-Context $\ast$p\-X\-Ctxt, \hyperlink{classgeneral__server_1_1XmlNodeList}{\-Xml\-Node\-List}$<$ const \-I\-Xml\-Base\-Node $>$ $\ast$$\ast$p\-Nodes)}\label{group__XSLModule-Functions_ga6fd492a595c2190d2cdcc15d73600678}
+
+\item 
+\hypertarget{group__XSLModule-Functions_gaf94e10af29ce6c16f9edf8037bdca2f9}{const char $\ast$ {\bfseries xsl\-Function\-\_\-read\-Valid\-X\-M\-L} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const \-I\-Xsl\-X\-Path\-Function\-Context $\ast$p\-X\-Ctxt, \hyperlink{classgeneral__server_1_1XmlNodeList}{\-Xml\-Node\-List}$<$ const \-I\-Xml\-Base\-Node $>$ $\ast$$\ast$p\-Nodes)}\label{group__XSLModule-Functions_gaf94e10af29ce6c16f9edf8037bdca2f9}
+
+\item 
+\hypertarget{group__XSLModule-Functions_ga02b0c10bfdb3cbe469a9b5838d6460e3}{const char $\ast$ {\bfseries xsl\-Function\-\_\-read\-Raw} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const \-I\-Xsl\-X\-Path\-Function\-Context $\ast$p\-X\-Ctxt, \hyperlink{classgeneral__server_1_1XmlNodeList}{\-Xml\-Node\-List}$<$ const \-I\-Xml\-Base\-Node $>$ $\ast$$\ast$p\-Nodes)}\label{group__XSLModule-Functions_ga02b0c10bfdb3cbe469a9b5838d6460e3}
+
+\item 
+\hypertarget{group__XSLModule-Functions_gab3913f2a4a226b2569fefe7cb8309639}{const char $\ast$ {\bfseries xsl\-Function\-\_\-read\-To\-Nodes} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const \-I\-Xsl\-X\-Path\-Function\-Context $\ast$p\-X\-Ctxt, \hyperlink{classgeneral__server_1_1XmlNodeList}{\-Xml\-Node\-List}$<$ const \-I\-Xml\-Base\-Node $>$ $\ast$$\ast$p\-Nodes)}\label{group__XSLModule-Functions_gab3913f2a4a226b2569fefe7cb8309639}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a493dcc5b279c7871c2b58215defdce74}{virtual const \*
+\-T\-Xml\-::transaction\-Result {\bfseries apply\-Transaction} (\hyperlink{classgeneral__server_1_1TXml}{\-T\-Xml} $\ast$t, \-I\-Xml\-Base\-Node $\ast$p\-Serialisation\-Node=0)}\label{classgeneral__server_1_1Repository_a493dcc5b279c7871c2b58215defdce74}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_adfb95a2bf00735b90f24908b3f7f6f59}{virtual const \*
+\-T\-Xml\-::transaction\-Result {\bfseries create\-Save\-Tree\-Placeholder} (const bool b\-Add\-Placeholder\-Prefix=true)}\label{classgeneral__server_1_1Repository_adfb95a2bf00735b90f24908b3f7f6f59}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_aa8f66c26b72e24a221c69e0849979307}{virtual const \*
+\-T\-Xml\-::transaction\-Result {\bfseries create\-Save\-Tree\-Placeholder\-Additions} ()}\label{classgeneral__server_1_1Repository_aa8f66c26b72e24a221c69e0849979307}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a598c5d669c8f2becc800d2c5e1b4dda5}{virtual const \*
+\-T\-Xml\-::transaction\-Result {\bfseries swap\-In\-Save\-Tree\-Placeholder} ()}\label{classgeneral__server_1_1Repository_a598c5d669c8f2becc800d2c5e1b4dda5}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a27e1a3302fbb90ee024e6ad6ce4d3caf}{virtual const \*
+\-T\-Xml\-::transaction\-Result {\bfseries create\-Element\-Only\-Placeholder} ()}\label{classgeneral__server_1_1Repository_a27e1a3302fbb90ee024e6ad6ce4d3caf}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a53252af0f0be9388ffd2f2ceddac62cc}{virtual const \*
+\-T\-Xml\-::transaction\-Result {\bfseries swap\-In\-Element\-Only\-Placeholder} ()}\label{classgeneral__server_1_1Repository_a53252af0f0be9388ffd2f2ceddac62cc}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a791a8e3530d805c98aea6eb528b2fec5}{virtual const \*
+\-T\-Xml\-::transaction\-Result {\bfseries sync\-Immediate\-Children} ()}\label{classgeneral__server_1_1Repository_a791a8e3530d805c98aea6eb528b2fec5}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_ab5121f0d04302652c56693d9fabfb969}{virtual const \*
+\-T\-Xml\-::transaction\-Result {\bfseries rollback} ()}\label{classgeneral__server_1_1Repository_ab5121f0d04302652c56693d9fabfb969}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Repository_ac8eb379e0435c8a78bac0083de860de7}{static \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$ {\bfseries factory\-\_\-reader} (const \-I\-Xml\-Library $\ast$p\-Lib, const char $\ast$s\-Full\-Path, const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Parent\-Repository=\-N\-U\-L\-L)}\label{classgeneral__server_1_1Repository_ac8eb379e0435c8a78bac0083de860de7}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a6dae0298dc3e6485355f98c106082e24}{static \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$ {\bfseries factory\-\_\-writable} (const \-I\-Xml\-Library $\ast$p\-Lib, const \hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$p\-Node, const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Root\-Repository, repository\-Type rt=t\-Auto\-Detect)}\label{classgeneral__server_1_1Repository_a6dae0298dc3e6485355f98c106082e24}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a802f9c9f3b961574bfce0469177d4a0f}{static const repository\-Type {\bfseries parse\-Repository\-Type} (const char $\ast$s\-Repository\-Type\-Name)}\label{classgeneral__server_1_1Repository_a802f9c9f3b961574bfce0469177d4a0f}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a9910a1064e9b51a999824cd9d7499210}{static const bool {\bfseries gimme} (const char $\ast$s\-File\-Path)}\label{classgeneral__server_1_1Repository_a9910a1064e9b51a999824cd9d7499210}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a22d4a72dd3babc2ab494f58bef0f06ce}{static const char $\ast$ {\bfseries protocol\-Standard} (const char $\ast$s\-Full\-Path)}\label{classgeneral__server_1_1Repository_a22d4a72dd3babc2ab494f58bef0f06ce}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a7e09f5c41f0a7155eddde5b49cbfe0e9}{static const char $\ast$ {\bfseries name\-Standard} (const char $\ast$s\-Full\-Path)}\label{classgeneral__server_1_1Repository_a7e09f5c41f0a7155eddde5b49cbfe0e9}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a0f915e22c64edb73f58252f80cb86174}{static const char $\ast$ {\bfseries extension\-Standard} (const char $\ast$s\-Full\-Path)}\label{classgeneral__server_1_1Repository_a0f915e22c64edb73f58252f80cb86174}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a619a9a7effb95ea5694e8504a360b748}{static int {\bfseries static\-\_\-input\-Read\-Callback} (void $\ast$context, char $\ast$buffer, int len)}\label{classgeneral__server_1_1Repository_a619a9a7effb95ea5694e8504a360b748}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a9af6c92ed66720ed89d0aec3e3cc7e0c}{static int {\bfseries static\-\_\-input\-Close\-Callback} (void $\ast$context)}\label{classgeneral__server_1_1Repository_a9af6c92ed66720ed89d0aec3e3cc7e0c}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a4696104c1c3d7924e3285f1b016f17f8}{static const int {\bfseries issplitter} (char c)}\label{classgeneral__server_1_1Repository_a4696104c1c3d7924e3285f1b016f17f8}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a8bdf66e1b6e6754e94b7cc8084beed9f}{static const char $\ast$ {\bfseries strrsplitter} (const char $\ast$s\-Input)}\label{classgeneral__server_1_1Repository_a8bdf66e1b6e6754e94b7cc8084beed9f}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_adbda2b36e15777bde39fc9043716d7c0}{static const char $\ast$ {\bfseries strsplitter} (const char $\ast$s\-Input)}\label{classgeneral__server_1_1Repository_adbda2b36e15777bde39fc9043716d7c0}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a08db70f40344119358b5313ae4c4d390}{static const char {\bfseries splitter} ()}\label{classgeneral__server_1_1Repository_a08db70f40344119358b5313ae4c4d390}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_ad3275339ed7023c848543a643cc5f336}{static const char $\ast$ {\bfseries canonicalise} (const char $\ast$s\-Raw\-Path)}\label{classgeneral__server_1_1Repository_ad3275339ed7023c848543a643cc5f336}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_adc0f2d2d07d5ea222acaa4e015990d5b}{static const char $\ast$ {\bfseries tag\-Start} (const char $\ast$s\-Tag\-Start)}\label{classgeneral__server_1_1Repository_adc0f2d2d07d5ea222acaa4e015990d5b}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a3c423d547aa3e7e6ca257447c8455766}{static const char $\ast$ {\bfseries tag\-Name\-End} (const char $\ast$s\-Tag\-Start)}\label{classgeneral__server_1_1Repository_a3c423d547aa3e7e6ca257447c8455766}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a264429e2e41b30b052eebcd30c787ff9}{static const char $\ast$ {\bfseries tag\-End} (const char $\ast$s\-Tag\-Start)}\label{classgeneral__server_1_1Repository_a264429e2e41b30b052eebcd30c787ff9}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a75fdd399ebe1da77de9a22655da7c1c4}{static const char $\ast$ {\bfseries tag\-End\-Back} (const char $\ast$s\-Tag\-Start)}\label{classgeneral__server_1_1Repository_a75fdd399ebe1da77de9a22655da7c1c4}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a284dae270712b6cd96e2cf2d3b224e87}{static const char $\ast$ {\bfseries tag\-Attribute\-Start} (const char $\ast$s\-Tag\-Start, const char $\ast$s\-Attribute\-Name)}\label{classgeneral__server_1_1Repository_a284dae270712b6cd96e2cf2d3b224e87}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_ad23a9cc2d7fed52ac0c1c516c1ebaa88}{static const char $\ast$ {\bfseries tag\-Attribute\-Value\-Start} (const char $\ast$s\-Tag\-Start, const char $\ast$s\-Attribute\-Name)}\label{classgeneral__server_1_1Repository_ad23a9cc2d7fed52ac0c1c516c1ebaa88}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a4448408b51aee3c19b2f901860247cd2}{static const char $\ast$ {\bfseries tag\-Attribute\-Value} (const char $\ast$s\-Tag\-Start, const char $\ast$s\-Attribute\-Name)}\label{classgeneral__server_1_1Repository_a4448408b51aee3c19b2f901860247cd2}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a55c9aed1c5dc05b5a0c62fc09e74b79f}{static void {\bfseries compilation\-Information} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \-I\-Xml\-Base\-Node $\ast$p\-Output)}\label{classgeneral__server_1_1Repository_a55c9aed1c5dc05b5a0c62fc09e74b79f}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries repository\-Type} \{ \*
+{\bfseries t\-Unknown\-Repository\-Type}, 
+{\bfseries t\-Internet\-Location}, 
+{\bfseries t\-Resources\-Store}, 
+{\bfseries t\-Directory}, 
+\*
+{\bfseries t\-Directory\-Details}, 
+{\bfseries t\-D\-O\-C\-Type\-Definition}, 
+{\bfseries t\-Commit\-File\-Temporary}, 
+{\bfseries t\-Meta\-File}, 
+\*
+{\bfseries t\-Editor\-Backup\-File}, 
+{\bfseries t\-Database\-Status\-File}, 
+{\bfseries t\-File}, 
+{\bfseries t\-Hardlink}, 
+\*
+{\bfseries t\-My\-S\-Q\-L}, 
+{\bfseries t\-Postgres}, 
+{\bfseries t\-Auto\-Detect}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a5562bf7a2b06f4b27b543910e514e701}{const char $\ast$ {\bfseries node\-X\-M\-L} (const \hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$p\-Node, const int i\-Max\-Depth=\-F\-U\-L\-L\-\_\-\-T\-R\-E\-E) const }\label{classgeneral__server_1_1Repository_a5562bf7a2b06f4b27b543910e514e701}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a017dfd87407cf31d197ff6aeb4c5bda0}{{\bfseries \-Repository} (const \-I\-Xml\-Library $\ast$p\-Lib, const char $\ast$s\-Full\-Path, const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Parent\-Repository=\-N\-U\-L\-L)}\label{classgeneral__server_1_1Repository_a017dfd87407cf31d197ff6aeb4c5bda0}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a0cf520b61e83c926ca3c32883327adfe}{{\bfseries \-Repository} (const \-I\-Xml\-Library $\ast$p\-Lib, const \hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$p\-Node, const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Root\-Repository)}\label{classgeneral__server_1_1Repository_a0cf520b61e83c926ca3c32883327adfe}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a0d9e46477dcfd904804042079c49425c}{virtual void {\bfseries populate\-Children} (const bool b\-Force=false)}\label{classgeneral__server_1_1Repository_a0d9e46477dcfd904804042079c49425c}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_aef0c95c89250d5e6879000c33a9dcd9f}{\hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$ {\bfseries nearest\-Sub\-Repository} (const \-I\-Xml\-Base\-Node $\ast$p\-Affected\-Node) const }\label{classgeneral__server_1_1Repository_aef0c95c89250d5e6879000c33a9dcd9f}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_aa9d62010ffe8cd4d34ca52667fb6dd4b}{void {\bfseries affected\-Sub\-Repositories} (\hyperlink{classvector}{vector}$<$ \hyperlink{structgeneral__server_1_1Repository_1_1AffectedRepositoryDetails}{\-Affected\-Repository\-Details} $>$ $\ast$pv\-Affect\-Sub\-Repositories, const \hyperlink{classvector}{vector}$<$ \hyperlink{structgeneral__server_1_1TXml_1_1AffectedNodeDetails}{\-T\-Xml\-::\-Affected\-Node\-Details} $>$ $\ast$pv\-Affected\-Nodes) const }\label{classgeneral__server_1_1Repository_aa9d62010ffe8cd4d34ca52667fb6dd4b}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_acad682e42db26159e5f1094ad7d92908}{virtual const char $\ast$ {\bfseries xml\-\_\-filename} (const char $\ast$s\-Full\-Path) const }\label{classgeneral__server_1_1Repository_acad682e42db26159e5f1094ad7d92908}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a6c56d1ccc7a941846cdfe6d56a88a002}{virtual const char $\ast$ {\bfseries protocol} (const char $\ast$s\-Full\-Path) const }\label{classgeneral__server_1_1Repository_a6c56d1ccc7a941846cdfe6d56a88a002}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a4e1ae4c42e7b07f45e081c72afd12f3a}{virtual const char $\ast$ {\bfseries name} (const char $\ast$s\-Full\-Path) const }\label{classgeneral__server_1_1Repository_a4e1ae4c42e7b07f45e081c72afd12f3a}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_ace3a622bd1821d42f5edac376a4b4986}{virtual const char $\ast$ {\bfseries extension} (const char $\ast$s\-Full\-Path) const }\label{classgeneral__server_1_1Repository_ace3a622bd1821d42f5edac376a4b4986}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_ad96b85b7ae41ceff45b588f67e2f1997}{virtual const bool {\bfseries include\-File\-As\-Node} () const }\label{classgeneral__server_1_1Repository_ad96b85b7ae41ceff45b588f67e2f1997}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a3287a5621db6d3f27b4ca5b715351cb1}{string {\bfseries base\-File\-System\-Path} (\hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$p\-Sub\-Repository\-Node=0, const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$p\-Root\-Repository=0) const }\label{classgeneral__server_1_1Repository_a3287a5621db6d3f27b4ca5b715351cb1}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a109d261edae3b1cdde71de7373c6cb90}{static const bool {\bfseries rationalise\-Affected\-Repositories\-Vector} (\hyperlink{classvector}{vector}$<$ \hyperlink{structgeneral__server_1_1Repository_1_1AffectedRepositoryDetails}{\-Affected\-Repository\-Details} $>$ $\ast$pv\-Affected\-Repositories)}\label{classgeneral__server_1_1Repository_a109d261edae3b1cdde71de7373c6cb90}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a1bfdd0cf5f081ba1583ff5a09e70dc0b}{static bool {\bfseries is\-Protocol} (const char $\ast$s\-File\-Path, const char $\ast$s\-Protocol)}\label{classgeneral__server_1_1Repository_a1bfdd0cf5f081ba1583ff5a09e70dc0b}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a5aa4a7623efc8aa822e838421f7a6897}{const \-I\-Xml\-Library $\ast$ {\bfseries m\-\_\-p\-Lib}}\label{classgeneral__server_1_1Repository_a5aa4a7623efc8aa822e838421f7a6897}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a181ce52cbe50ff349d60c9aa2996b2a7}{const \hyperlink{classgeneral__server_1_1Repository}{\-Repository} $\ast$ {\bfseries m\-\_\-p\-Parent}}\label{classgeneral__server_1_1Repository_a181ce52cbe50ff349d60c9aa2996b2a7}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a664c09c1db4cc5342d84c672d8fcb217}{const char $\ast$ {\bfseries m\-\_\-s\-Full\-Path}}\label{classgeneral__server_1_1Repository_a664c09c1db4cc5342d84c672d8fcb217}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a740183c3dc30cf7cf5800ca57777d34d}{const char $\ast$ {\bfseries m\-\_\-s\-Protocol}}\label{classgeneral__server_1_1Repository_a740183c3dc30cf7cf5800ca57777d34d}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a734e2ebacb355a32fa1f8941028aac4a}{const char $\ast$ {\bfseries m\-\_\-s\-Name}}\label{classgeneral__server_1_1Repository_a734e2ebacb355a32fa1f8941028aac4a}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a16529e2348b7604b7b56cdbd7bbc5262}{const char $\ast$ {\bfseries m\-\_\-s\-Extension}}\label{classgeneral__server_1_1Repository_a16529e2348b7604b7b56cdbd7bbc5262}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_aaea1121d11f185b83cd62c96a68b0bc8}{const char $\ast$ {\bfseries m\-\_\-xml\-\_\-filename}}\label{classgeneral__server_1_1Repository_aaea1121d11f185b83cd62c96a68b0bc8}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a8ab9a8e38e320e16c91552cfa5decdb9}{static size\-\_\-t {\bfseries m\-\_\-i\-Rep\-X\-M\-L\-N\-S\-Len} = strlen(\-N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-R\-E\-P\-O\-S\-I\-T\-O\-R\-Y\-\_\-\-X\-M\-L\-N\-S)}\label{classgeneral__server_1_1Repository_a8ab9a8e38e320e16c91552cfa5decdb9}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_acb2fb649867d66f2eeb27a99bebbce2d}{static size\-\_\-t {\bfseries m\-\_\-i\-Rep\-N\-S\-Alias\-Len} = strlen(\-N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-R\-E\-P\-O\-S\-I\-T\-O\-R\-Y\-\_\-\-A\-L\-I\-A\-S)}\label{classgeneral__server_1_1Repository_acb2fb649867d66f2eeb27a99bebbce2d}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_abe62c406c47d7f5828b0ad52594d8d40}{static size\-\_\-t {\bfseries m\-\_\-i\-Root\-Name\-Len} = strlen(\-R\-E\-P\-O\-S\-I\-T\-O\-R\-Y\-\_\-\-R\-O\-O\-T\-\_\-\-N\-A\-M\-E)}\label{classgeneral__server_1_1Repository_abe62c406c47d7f5828b0ad52594d8d40}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a0f791518ec30721c74af435235fa3b0c}{static size\-\_\-t {\bfseries m\-\_\-i\-N\-S\-Default\-Len} = strlen(\-N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-D\-E\-F\-A\-U\-L\-T)}\label{classgeneral__server_1_1Repository_a0f791518ec30721c74af435235fa3b0c}
+
+\item 
+\hypertarget{classgeneral__server_1_1Repository_a85e775b8cd7fdaf80c76324cf515d255}{static size\-\_\-t {\bfseries m\-\_\-i\-N\-S\-All\-Len} = strlen(\-N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-A\-L\-L)}\label{classgeneral__server_1_1Repository_a85e775b8cd7fdaf80c76324cf515d255}
+
+\end{DoxyCompactItemize}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+platform\-\_\-general/\-Repository.\-h\item 
+platform\-\_\-general/\-Repository.\-cpp\end{DoxyCompactItemize}

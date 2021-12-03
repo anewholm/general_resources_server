@@ -1,0 +1,269 @@
+\hypertarget{classgeneral__server_1_1TXml}{\section{general\-\_\-server\-:\-:\-T\-Xml \-Class \-Reference}
+\label{classgeneral__server_1_1TXml}\index{general\-\_\-server\-::\-T\-Xml@{general\-\_\-server\-::\-T\-Xml}}
+}
+\-Inheritance diagram for general\-\_\-server\-:\-:\-T\-Xml\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classgeneral__server_1_1TXml}
+\end{center}
+\end{figure}
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgeneral__server_1_1TXml_1_1AffectedNodeDetails}{\-Affected\-Node\-Details}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries transaction\-Result} \{ \*
+{\bfseries transaction\-Not\-Started} =  0, 
+{\bfseries transaction\-Success}, 
+{\bfseries transaction\-Failure}, 
+{\bfseries transaction\-Failure\-Security}, 
+\*
+{\bfseries transaction\-Failure\-Destination\-Invalid}, 
+{\bfseries transaction\-Failure\-Source\-Invalid}, 
+{\bfseries transaction\-Failure\-Before\-Invalid}, 
+{\bfseries transaction\-Failure\-To\-Lazy}
+ \}
+\item 
+enum {\bfseries commit\-Style} \{ {\bfseries not\-Required} =  0, 
+{\bfseries selective}, 
+{\bfseries full}
+ \}
+\item 
+enum {\bfseries commit\-Status} \{ \*
+{\bfseries commit\-Status\-Unknown} =  0, 
+{\bfseries begin\-Commit}, 
+{\bfseries begin\-Commit\-Create\-Placeholders}, 
+{\bfseries begin\-Commit\-Transaction\-Delete}, 
+\*
+{\bfseries begin\-Commit\-Swap\-In\-Placeholders}, 
+{\bfseries commit\-Finished}
+ \}
+\item 
+enum {\bfseries update\-Type} \{ \*
+{\bfseries unknown\-Update\-Type} =  0, 
+{\bfseries move\-Child}, 
+{\bfseries copy\-Child}, 
+{\bfseries hardlink\-Child}, 
+\*
+{\bfseries softlink\-Child}, 
+{\bfseries replace\-Node\-Copy}, 
+{\bfseries set\-Attribute}, 
+{\bfseries set\-Value}, 
+\*
+{\bfseries remove\-Node}, 
+{\bfseries change\-Name}, 
+{\bfseries create\-Child\-Element}, 
+{\bfseries touch\-Node}
+ \}
+\item 
+enum {\bfseries affected\-Scope} \{ {\bfseries save\-Element\-Only}, 
+{\bfseries sync\-Immediate\-Children}, 
+{\bfseries save\-Tree}, 
+{\bfseries link\-Child}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1TXml_ae36aa28a46429eb57735868c5544892e}{{\bfseries \-T\-Xml} (const \hyperlink{classgeneral__server_1_1TXml}{\-T\-Xml} \&t)}\label{classgeneral__server_1_1TXml_ae36aa28a46429eb57735868c5544892e}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a6c3bcd9aebf02b681593de1e41fff472}{virtual \hyperlink{classgeneral__server_1_1TXml}{\-T\-Xml} $\ast$ {\bfseries clone\-\_\-with\-\_\-resources} () const =0}\label{classgeneral__server_1_1TXml_a6c3bcd9aebf02b681593de1e41fff472}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_aaed29f3cea500afff70456ac6fe2a43d}{virtual void {\bfseries add\-Transform} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const \-I\-Xml\-Base\-Node $\ast$p\-Transform\-With\-Stylesheet, const char $\ast$s\-With\-Param=0, const char $\ast$s\-With\-Mode=0)}\label{classgeneral__server_1_1TXml_aaed29f3cea500afff70456ac6fe2a43d}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a8bdc972466636778ac1b7caa528fee9c}{\-I\-Xml\-Base\-Node $\ast$ {\bfseries create\-Child\-Doc} (const \-I\-Xml\-Base\-Doc $\ast$p\-Namespace\-Doc=0)}\label{classgeneral__server_1_1TXml_a8bdc972466636778ac1b7caa528fee9c}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_aa4912ed3ad5bda75f70c436a1388b77f}{virtual \-I\-Xml\-Base\-Node $\ast$ {\bfseries select\-Copy\-Into\-T\-Xml} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const \-I\-Xml\-Base\-Node $\ast$p\-Child\-Node\-To\-Copy, const \-I\-Xml\-Base\-Doc $\ast$p\-Namespace\-Doc=0)}\label{classgeneral__server_1_1TXml_aa4912ed3ad5bda75f70c436a1388b77f}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_ac907e0c84f971716ad40386d3a8fa023}{\-I\-Xml\-Base\-Node $\ast$ {\bfseries select\-Copy\-Into\-T\-Xml} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const char $\ast$s\-X\-M\-L, const \-I\-Xml\-Base\-Doc $\ast$p\-Namespace\-Doc=0)}\label{classgeneral__server_1_1TXml_ac907e0c84f971716ad40386d3a8fa023}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a8eb90fdf342577b55203a173f3290691}{void {\bfseries set\-Results\-Data} (const bool b\-Had\-Nodes\-To\-Process, const char $\ast$s\-Result\-F\-Q\-Node\-Name, const char $\ast$s\-Result\-Xml\-Id, const char $\ast$s\-Result\-Repository\-Name, const char $\ast$s\-Result\-Parent\-X\-Path, const char $\ast$s\-Extension\-Element\-Prefixes, const char $\ast$s\-X\-S\-L\-Module\-Manager\-Name)}\label{classgeneral__server_1_1TXml_a8eb90fdf342577b55203a173f3290691}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a6325a2f1290e8149c506d30fb95e4249}{virtual void {\bfseries affected\-Nodes} (\hyperlink{classvector}{vector}$<$ \hyperlink{structgeneral__server_1_1TXml_1_1AffectedNodeDetails}{\-Affected\-Node\-Details} $>$ $\ast$pv\-Affected\-Nodes, const \-I\-Xml\-Base\-Doc $\ast$p\-Doc) const =0}\label{classgeneral__server_1_1TXml_a6325a2f1290e8149c506d30fb95e4249}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_af1b2a737314ae9b34b894c6793e47292}{const char $\ast$ {\bfseries version} ()}\label{classgeneral__server_1_1TXml_af1b2a737314ae9b34b894c6793e47292}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a324346030193adc988b03f3bdf25fa06}{const bool {\bfseries has\-Nodes\-To\-Process} () const }\label{classgeneral__server_1_1TXml_a324346030193adc988b03f3bdf25fa06}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a65c8ec3de9f779a0f5e32b2f8841a044}{const transaction\-Result {\bfseries apply\-To} (\-I\-T\-Xml\-Direct\-Functions $\ast$p\-Store, \-I\-Xml\-Base\-Node $\ast$$\ast$p\-Result\-Node=0)}\label{classgeneral__server_1_1TXml_a65c8ec3de9f779a0f5e32b2f8841a044}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a4510050c8b5d136b3218f8d4fbe904f9}{void {\bfseries succeed} ()}\label{classgeneral__server_1_1TXml_a4510050c8b5d136b3218f8d4fbe904f9}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_aaee3cff868cadf0416c6b44be5838294}{void {\bfseries fail} (const transaction\-Result tr)}\label{classgeneral__server_1_1TXml_aaee3cff868cadf0416c6b44be5838294}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a0119eb32f0b805f400a81a42664f2069}{virtual const char $\ast$ {\bfseries serialise} (\-I\-Xml\-Base\-Node $\ast$p\-Serialisation\-Node) const }\label{classgeneral__server_1_1TXml_a0119eb32f0b805f400a81a42664f2069}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a5dbc075b7dacbec6d72325c95522bf8a}{virtual const char $\ast$ {\bfseries to\-String} () const }\label{classgeneral__server_1_1TXml_a5dbc075b7dacbec6d72325c95522bf8a}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a60295c15a55ba79172389e4997ac2fb3}{virtual \-I\-Xml\-Base\-Node $\ast$ {\bfseries to\-Node} (\-I\-Xml\-Base\-Node $\ast$p\-Serialisation\-Node) const }\label{classgeneral__server_1_1TXml_a60295c15a55ba79172389e4997ac2fb3}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a0fa45347851780c5cacabfeef03ab48e}{static \hyperlink{classgeneral__server_1_1TXml}{\-T\-Xml} $\ast$ {\bfseries factory} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \hyperlink{classgeneral__server_1_1TXmlProcessor}{\-T\-Xml\-Processor} $\ast$p\-Store, const \-I\-Xml\-Base\-Node $\ast$p\-T\-Xml\-Spec\-Node)}\label{classgeneral__server_1_1TXml_a0fa45347851780c5cacabfeef03ab48e}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a7811e6f4fda46e0f1e5da6d3c2944af5}{static \hyperlink{classgeneral__server_1_1TXml}{\-T\-Xml} $\ast$ {\bfseries factory} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \hyperlink{classgeneral__server_1_1TXmlProcessor}{\-T\-Xml\-Processor} $\ast$p\-Store, const \-I\-Xsl\-X\-Path\-Function\-Context $\ast$p\-X\-Ctxt)}\label{classgeneral__server_1_1TXml_a7811e6f4fda46e0f1e5da6d3c2944af5}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a11f46ec97651f5c4509e3a518b37e969}{static const char $\ast$ {\bfseries get\-Affected\-Scope\-Name} (const affected\-Scope i\-Affected\-Scope)}\label{classgeneral__server_1_1TXml_a11f46ec97651f5c4509e3a518b37e969}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a90e63a1738567b106b5803086e8c0459}{static \-T\-Xml\-::affected\-Scope {\bfseries parse\-Affected\-Scope\-Name} (const char $\ast$s\-Affected\-Scope\-Name)}\label{classgeneral__server_1_1TXml_a90e63a1738567b106b5803086e8c0459}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a39a2656ddeceb5671ad66af4778655fa}{static void {\bfseries compilation\-Information} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \-I\-Xml\-Base\-Node $\ast$p\-Output)}\label{classgeneral__server_1_1TXml_a39a2656ddeceb5671ad66af4778655fa}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a79da427a0f39650bd9d0da719c4d366f}{{\bfseries \-T\-Xml} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const update\-Type i\-Update\-Type, const char $\ast$s\-Description, const \-I\-Xml\-Base\-Node $\ast$p\-Base\-Node, const \-I\-Xml\-Base\-Node $\ast$p\-Select\-Node, const \-I\-Xml\-Base\-Node $\ast$p\-Destination\-Node, const \-I\-Xml\-Base\-Node $\ast$p\-Before\-Node)}\label{classgeneral__server_1_1TXml_a79da427a0f39650bd9d0da719c4d366f}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_adcf0d7a6b74eff444fbbb1429d7de850}{void {\bfseries add\-Transform\-Private} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const \-I\-Xml\-Base\-Node $\ast$p\-Transform\-With\-Stylesheet, const char $\ast$s\-With\-Param=0, const char $\ast$s\-With\-Mode=0)}\label{classgeneral__server_1_1TXml_adcf0d7a6b74eff444fbbb1429d7de850}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a09ca8b81c73c27edde08b36b976b3313}{const char $\ast$ {\bfseries get\-Update\-Type\-Name} () const }\label{classgeneral__server_1_1TXml_a09ca8b81c73c27edde08b36b976b3313}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_ac69baabeae705bba6a94810c7597b4fc}{virtual const \*
+\-T\-Xml\-::transaction\-Result {\bfseries run\-Function\-On\-Store} (\-I\-T\-Xml\-Direct\-Functions $\ast$p\-Store, const char $\ast$s\-User\-Store\-X\-Path, \-I\-Xml\-Base\-Node $\ast$$\ast$p\-Result\-Node, const char $\ast$$\ast$s\-Select\-F\-Q\-Node\-Name, const char $\ast$$\ast$s\-Select\-Xml\-Id, const char $\ast$$\ast$s\-Select\-Repository\-Name, const char $\ast$$\ast$s\-Result\-Parent\-X\-Path, const char $\ast$$\ast$s\-Extension\-Element\-Prefixes, const char $\ast$$\ast$s\-New\-Result\-Xsl\-Module\-Manager\-Name)=0}\label{classgeneral__server_1_1TXml_ac69baabeae705bba6a94810c7597b4fc}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1TXml_abcc759200e44e0fdd7f2116bb60230a7}{static const char $\ast$ {\bfseries get\-Update\-Type\-Name} (const update\-Type i\-Update\-Type)}\label{classgeneral__server_1_1TXml_abcc759200e44e0fdd7f2116bb60230a7}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_aa42b3fbc7ca581d4128203420b43b935}{static const update\-Type {\bfseries parse\-Update\-Type} (const char $\ast$s\-Update\-Type\-Name)}\label{classgeneral__server_1_1TXml_aa42b3fbc7ca581d4128203420b43b935}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a72571911a614a74705596239fad70ab7}{\hyperlink{classgeneral__server_1_1XmlAdminQueryEnvironment}{\-Xml\-Admin\-Query\-Environment} $\ast$ {\bfseries m\-\_\-p\-I\-B\-Q\-E\-\_\-child\-Doc\-Control}}\label{classgeneral__server_1_1TXml_a72571911a614a74705596239fad70ab7}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a0230eb8a8f0cb539a09ee0d3d23990e6}{update\-Type {\bfseries m\-\_\-i\-Update\-Type}}\label{classgeneral__server_1_1TXml_a0230eb8a8f0cb539a09ee0d3d23990e6}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a2facd8300e52f065844cfc92369ae245}{const char $\ast$ {\bfseries m\-\_\-s\-Base\-X\-Path}}\label{classgeneral__server_1_1TXml_a2facd8300e52f065844cfc92369ae245}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_aea9b509ff6a41eba5ca137b410db3d25}{const char $\ast$ {\bfseries m\-\_\-s\-Select\-X\-Path}}\label{classgeneral__server_1_1TXml_aea9b509ff6a41eba5ca137b410db3d25}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_aa6be3dceffda47810a9542038519b094}{const char $\ast$ {\bfseries m\-\_\-s\-Description}}\label{classgeneral__server_1_1TXml_aa6be3dceffda47810a9542038519b094}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_ad163e11bfab1f1c291c965396b74d356}{const char $\ast$ {\bfseries m\-\_\-s\-Destination\-X\-Path}}\label{classgeneral__server_1_1TXml_ad163e11bfab1f1c291c965396b74d356}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a68a41988c95e8eed9b9ef74c844407b6}{const char $\ast$ {\bfseries m\-\_\-s\-Before\-X\-Path}}\label{classgeneral__server_1_1TXml_a68a41988c95e8eed9b9ef74c844407b6}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_aa9542d3de561bf5bc17b0fe4d39b9007}{bool {\bfseries m\-\_\-b\-Select\-Copied}}\label{classgeneral__server_1_1TXml_aa9542d3de561bf5bc17b0fe4d39b9007}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a8806558865e3263acb2614cd1fc18761}{\-I\-Xml\-Base\-Doc $\ast$ {\bfseries m\-\_\-p\-Child\-Doc}}\label{classgeneral__server_1_1TXml_a8806558865e3263acb2614cd1fc18761}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_aaff9648fd365ff2dd5cf6ed5b930e4cc}{\-I\-Xml\-Base\-Node $\ast$ {\bfseries m\-\_\-p\-Child\-Node}}\label{classgeneral__server_1_1TXml_aaff9648fd365ff2dd5cf6ed5b930e4cc}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a8a4817524d7a42bbe4902259f0743ecb}{bool {\bfseries m\-\_\-b\-From\-X\-M\-L}}\label{classgeneral__server_1_1TXml_a8a4817524d7a42bbe4902259f0743ecb}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a8e66cac9535fee7a98362ab88316f825}{bool {\bfseries m\-\_\-b\-Last\-Doc\-Is\-Repeatable\-After\-Reload}}\label{classgeneral__server_1_1TXml_a8e66cac9535fee7a98362ab88316f825}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a61a0d061b8b9ce621a3e31b3a9661308}{bool {\bfseries m\-\_\-b\-Last\-Doc\-Needs\-Select\-Copy}}\label{classgeneral__server_1_1TXml_a61a0d061b8b9ce621a3e31b3a9661308}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a18a67697d61b69ba6c3c029c4295f867}{const char $\ast$ {\bfseries m\-\_\-s\-Transform\-With\-X\-Path}}\label{classgeneral__server_1_1TXml_a18a67697d61b69ba6c3c029c4295f867}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a2bba9e24e7f1edc5f13c65b4987e6f50}{const char $\ast$ {\bfseries m\-\_\-s\-With\-Param}}\label{classgeneral__server_1_1TXml_a2bba9e24e7f1edc5f13c65b4987e6f50}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a2aada165b29c504273dd6e00d7c784f2}{const char $\ast$ {\bfseries m\-\_\-s\-With\-Mode}}\label{classgeneral__server_1_1TXml_a2aada165b29c504273dd6e00d7c784f2}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a191be73f9c45b6c67877a49d05c3f049}{const char $\ast$ {\bfseries m\-\_\-s\-Read\-O\-P\-User\-G\-U\-I\-D\-For\-Transform}}\label{classgeneral__server_1_1TXml_a191be73f9c45b6c67877a49d05c3f049}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_ae372b5b00b0fd1c5e1039866646a458e}{const char $\ast$ {\bfseries m\-\_\-s\-User\-Id}}\label{classgeneral__server_1_1TXml_ae372b5b00b0fd1c5e1039866646a458e}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_aedb14f3314aa005d80cc02ae4a949693}{const char $\ast$ {\bfseries m\-\_\-s\-Special\-Programmatic\-User}}\label{classgeneral__server_1_1TXml_aedb14f3314aa005d80cc02ae4a949693}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_aaca5114495e1b6ef6a560cecb337e2e6}{const char $\ast$ {\bfseries m\-\_\-s\-User\-Store\-Location}}\label{classgeneral__server_1_1TXml_aaca5114495e1b6ef6a560cecb337e2e6}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a74bc7384983d67a27c4d45ee767b4e74}{bool {\bfseries m\-\_\-b\-Applied\-Once}}\label{classgeneral__server_1_1TXml_a74bc7384983d67a27c4d45ee767b4e74}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_ac76c6cbeefa106db8dde2ed18e49144a}{bool {\bfseries m\-\_\-b\-Had\-Nodes\-To\-Process}}\label{classgeneral__server_1_1TXml_ac76c6cbeefa106db8dde2ed18e49144a}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a451b67f478f04e3ac6a767c292dee9f5}{const char $\ast$ {\bfseries m\-\_\-s\-Result\-F\-Q\-Node\-Name}}\label{classgeneral__server_1_1TXml_a451b67f478f04e3ac6a767c292dee9f5}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a3cb143c2ae857df1dcda65d4f2b0e5a5}{const char $\ast$ {\bfseries m\-\_\-s\-Result\-Xml\-Id}}\label{classgeneral__server_1_1TXml_a3cb143c2ae857df1dcda65d4f2b0e5a5}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_adfb3a26d23e923db37d76d961d6b4d52}{const char $\ast$ {\bfseries m\-\_\-s\-Result\-Repository\-Name}}\label{classgeneral__server_1_1TXml_adfb3a26d23e923db37d76d961d6b4d52}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a1224fe344714d8ad10e31ccf955e061c}{const char $\ast$ {\bfseries m\-\_\-s\-Result\-Parent\-X\-Path}}\label{classgeneral__server_1_1TXml_a1224fe344714d8ad10e31ccf955e061c}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a7ccdbed30537ccb85715f2ebbc0475ab}{const char $\ast$ {\bfseries m\-\_\-s\-Extension\-Element\-Prefixes}}\label{classgeneral__server_1_1TXml_a7ccdbed30537ccb85715f2ebbc0475ab}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_af9e643d02b16d8d19325fbfad5b98ceb}{const char $\ast$ {\bfseries m\-\_\-s\-X\-S\-L\-Module\-Manager\-Name}}\label{classgeneral__server_1_1TXml_af9e643d02b16d8d19325fbfad5b98ceb}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a1c189b6514a00342196591c3207384cb}{transaction\-Result {\bfseries m\-\_\-i\-Last\-Transaction\-Result}}\label{classgeneral__server_1_1TXml_a1c189b6514a00342196591c3207384cb}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_af7f74273598bab722cd367af359e0577}{const char $\ast$ {\bfseries m\-\_\-s\-Destination\-X\-M\-L\-I\-D}}\label{classgeneral__server_1_1TXml_af7f74273598bab722cd367af359e0577}
+
+\item 
+\hypertarget{classgeneral__server_1_1TXml_a510736cf73b0e477eae576897df607f1}{const char $\ast$ {\bfseries m\-\_\-s\-Select\-X\-M\-L\-I\-D}}\label{classgeneral__server_1_1TXml_a510736cf73b0e477eae576897df607f1}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1TXml_abfcbf3d0beb2e47cb84990301974ba77}{class {\bfseries \-T\-Xml\-Processor}}\label{classgeneral__server_1_1TXml_abfcbf3d0beb2e47cb84990301974ba77}
+
+\end{DoxyCompactItemize}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+platform\-\_\-general/\-T\-Xml.\-h\item 
+platform\-\_\-general/\-T\-Xml.\-cpp\end{DoxyCompactItemize}

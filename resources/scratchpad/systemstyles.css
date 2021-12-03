@@ -1,0 +1,375 @@
+
+/* ---------------------------- style defaults ---------------------------- */
+body {
+  font-family:verdana;
+  padding:10px;
+  margin:0;
+}
+form.inline div, .inline {display:inline;}
+
+h1 {
+  font-size:16px;
+  margin:0;
+}
+h2 {
+  font-size:16px;
+  margin:0;
+}
+h3 {
+  font-size:14px;
+  margin:8px 0 0 0;
+  font-style:italic;
+  border-bottom:1px solid #a7a7a7;
+}
+h1 .note, h2 .note {
+  font-size:11px;
+  color:#666666;
+  font-weight:normal;
+  padding-left:10px;
+}
+
+/* ---------------------------- system menu ---------------------------- */
+#gs_system_menu {
+  position:fixed;
+  right:10px;
+  top:10px;
+
+  opacity:0.5;
+  border:1px solid #777;
+  background-color:#FFFF66;
+  padding:1px 10px 1px 10px;
+  font-size:11px;
+}
+#gs_system_menu ul {
+  padding:0px;
+  margin:0px;
+  border-left:1px dotted #777;
+  list-style:none;
+  border-top:1px dotted #777;
+}
+#gs_system_menu #gs_system_menu_title {
+  font-style:italic;
+
+  background-image:url(/resources/shared/images/general_server/general_server_10.png);
+  background-position:right center;
+  background-repeat:no-repeat;
+  padding:0 14px 0 0;
+}
+#gs_system_menu ul.first {
+  border-left:none;
+}
+#gs_system_menu ul li.first {
+  font-weight:bold;
+}
+#gs_system_menu li {
+  padding:0 3px;
+  cursor:pointer;
+}
+#gs_system_menu li:hover {
+  background-color:#f0f066;
+  color:#666600;
+  cursor:pointer;
+}
+#gs_system_menu.expanded {
+  opacity:1.0;
+}
+
+#copyright {
+  position:fixed;
+  right:0px;
+  bottom:0px;
+  border-top:1px solid #aaa;
+  border-left:1px solid #aaa;
+  background-color:#fff;
+  padding:1px 10px 1px 10px;
+  font-size:10px;
+  font-family:verdana;
+  background-image:url(/resources/shared/images/back_twotone_gray.png);
+  background-position:center left;
+  background-repeat:repeat-x;
+}
+
+#gs_document_validity_check, .gs_node_validity_check {
+  background-color:#fcfd64;
+  border:1px solid #666666;
+  color:#111111;
+  margin:5px 20px 20px 20px;
+  padding:5px 5px 5px 30px;
+  background-image:url(/resources/shared/images/icons/error.png);
+  background-position:4px center;
+}
+
+/* ---------------------------- elements.css ---------------------------- */
+.bare {
+  text-decoration:none;
+  color:#000000;
+}
+.clickable {cursor:pointer;}
+.at, .dot {vertical-align:bottom;}
+.quicklink {position:relative;}
+.quicklink_linked
+{
+    text-decoration:none;
+    border-bottom:1px dashed #a0a0a0;
+}
+.quicktip
+{
+    display:none;
+    position:absolute;
+    left:10px;
+    top:70%;
+    z-index:100;
+
+    cursor:default;
+    border:1px solid #a0a0a0;
+    color:#000000;
+    padding:2px;
+    white-space:nowrap;
+    background-image:url(/societycard/images/yellowback.png);
+    background-position:center center;
+    background-repeat:repeat-x;
+}
+.extended_attributes .caption,
+.extended_attributes .original,
+.extended_attributes .validation_error,
+.extended_attributes .required,
+.extended_attributes .field_message,
+.extended_attributes .field_message_type
+  {display:none;}
+.js_remove {}
+.js_hide {}
+.js_show {display:none;}
+
+#recaptcha_iframe {
+    height:300px;
+    width:500px;
+    border:none;
+}
+.editor_loading {
+  color:Transparent;
+  border:1px dotted #d0d0d0;
+  background-image:url(/images/loading.gif);
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+/* -------------------------------------- typeahead -------------------------------------- */
+.typeahead
+{
+    display:inline;
+}
+.typeahead ul
+{
+    position:absolute;
+    z-index:100;
+}
+.typeahead ul ul
+{
+  position:relative;
+}
+.typeahead .nooptions
+{
+    font-style:italic;
+    color:#555555;
+}
+.typeahead .typeahead_heading
+{
+    font-style:italic;
+    border-bottom:1px solid #aaaaaa;
+}
+
+/* ---------------------------- map ---------------------------- */
+#content .infowindow {display:none;}
+#content .xtransport {display:none;} /* generic data transport class */
+#map .infowindow {display:block;}
+
+/* #################### system.css ####################### */
+.system_register {display:none;} /* system fundctions like IFRAME registration of success */
+.testrig_data    {display:none;} /* e.g. extra data in the HTML for Selenium */
+
+/* ---------------------------- layout standards ---------------------------- */
+.display_none {display:none;}
+.display_block {display:block;}
+.display_inline {display:inline;}
+table.layout {width:100%;}
+.float_left {float:left;margin-right:6px;}
+.float_right {float:right;margin-left:6px;}
+.clear, .clear_both {clear:both;}
+.clear_left {clear:left;}
+.clear_right {clear:right;}
+.relative {position:relative;}
+.indent10 {margin-left:10px;}
+.indent20 {margin-left:20px;}
+.indent30 {margin-left:30px;}
+.nowrap {white-space:nowrap;}
+ul.inline_list li {
+    display:inline;
+    margin-right:4px;
+}
+.center {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+.zi-1 {z-index:1;}
+.zi-2 {z-index:2;}
+.zi-3 {z-index:3;}
+.zi-4 {z-index:4;}
+.zi-5 {z-index:5;}
+.zi-6 {z-index:6;}
+.zi-7 {z-index:7;}
+.zi-8 {z-index:8;}
+.zi-9 {z-index:9;}
+
+/* ---------------------------- printing ---------------------------- */
+/* make the screen look like the page: note advice for printing is 10mm page margins, screen shows 15mmm margins */
+.A4, .A5, .A4landscape, .A5landscape {
+  position:relative;           /* co-ordinate reset only */
+  display:block;
+  overflow:hidden;
+  margin:0;
+  padding:0;
+  background-color:#ffffff;
+  page-break-inside:avoid;
+}
+.A4, .A5, .A4landscape {       /* downward flow is everything but A5landscape */
+  clear:both;
+}
+.A4landscape {
+  height:180mm;                /* 210mm - 30mm (15mm left and right margins, applied by the @media screen or the printer) */
+  min-height:180mm;
+  width:267mm;                 /* 297mm - 30mm (15mm estimated gutter and header, applied by the @media screen or the printer) */
+  min-width:267mm;
+}
+.A4 {
+  width:180mm;                 /* 210mm - 30mm (15mm left and right margins, applied by the @media screen or the printer) */
+  min-width:180mm;
+  height:267mm;                /* 297mm - 30mm (15mm estimated gutter and header, applied by the @media screen or the printer) */
+  min-height:267mm;
+  page-break-after:avoid;
+}
+.A4 .inner {                   /* container within padded area to allow absolute positioning and sizeing within padding */
+  height:100%;
+  position:relative;
+}
+.A4 .A5 {                      /* contained within A4 always */
+  height:123mm;                /* (297mm - 30mm margins - 20mm separator) div 2 */
+  min-height:123mm;
+}
+.A4landscape .A5landscape {    /* split horizontally */
+  float:left;
+  height:100%;
+  width:123mm;                 /* (297mm - 30mm margins - 20mm separator) div 2 */
+  min-width:123mm;
+}
+body .last    {page-break-after:avoid;}
+.pagebreak    {page-break-after:always;}
+.no_pagebreak {page-break-inside:avoid;} /* block level elements only: not supported in FF 3 */
+.A4 .A5seperator {
+  border-bottom:1px dashed #e0e0e0;
+  margin:10mm 0 10mm 0;
+}
+.A4landscape .A5seperator {és
+  float:left;
+  height:100%;
+  border-left:1px dashed #e0e0e0;
+  margin:0 10mm 0 10mm;
+}
+@media screen {
+  body .print_only, #body .print_only {display:none;}
+  .pagebreak {
+      clear:both;
+      display:block;
+  }
+  #content .A4, #content .A4landscape {
+    margin:5mm auto 5mm auto;             /* centreing of the A4 page on screen */
+    padding:15mm;                         /* screen show page margins: the printer will apply these in @media print mode */
+    border:1px solid #666666;             /* page edge */
+  }
+}
+
+/* ---------------------------- printing ---------------------------- */
+@media print {
+  body .screen_only, #body .screen_only {display:none!important;}
+
+  body #content,                          /* reset: remove all centering and margins for all print modes */
+  body #content #center_plate {
+    margin:0!important;                   /* need to override here cause specificity is equal */
+    padding:0!important;
+    width:100%!important;
+  }
+  body {                                  /* HTML printing (.server and .client modes): let the user apply printer margins */
+    margin:0!important;                   /* override body settings in the header.xsl */
+    padding:0!important;
+  }
+  #content .A4,                           /* HTML printing with A4 (.server and .client modes): let the user apply printer margins */
+  #content .A4landscape,                  /* requires 100% scaling: most browsers seem to shrink to fit it */
+  #content .A5 {
+    padding:0;
+    margin:0;
+  }
+  .pdfmode_normal {                       /* PDF printing without A4 pages: apply the margins at body level (wkhtmltopdf cannot do margins) */
+    margin:15mm!important;
+    padding:0!important;
+  }
+  .pdfmode_A4 #content .A4,               /* PDF printing with A4 pages: apply margins at A4 level (wkhtmltopdf cannot do margins) */
+  .pdfmode_A4 #content .A4landscape {
+    margin:15mm;
+    padding:0;
+  }
+  .pdfmode_A4 #content .A4.last,          /* PDF writer ignores page-breaks and collapses A4 top and bottom margins :( */
+  .pdfmode_A4 #content .A4.middle,
+  .pdfmode_A4 #content .A4landscape.last,
+  .pdfmode_A4 #content .A4landscape.middle
+  {
+    margin-top:30mm;
+  }
+}
+/* tabs */
+@media print {
+  .ui-tabs-hide {display:none;}
+}
+
+/* ---------------------------- form standards ---------------------------- */
+form .gs_entires {display:none;}
+.forminline, .forminline div {display:inline;}
+.textarea_medium {height:200px;}
+.textarea_large  {height:400px;}
+.input_small {width:100px;}
+.input_medium {width:300px;}
+.input_large {width:500px;}
+.terms_and_conditions {font-family:Arial;}
+.input_default {color:#666666;}
+.ajax_submitted .submission_confirmation {
+  width:24px;
+  height:24px;
+  background-image:url(/societycard/images/smalltick.png);
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+
+/* ---------------------------- misc ---------------------------- */
+.dialog .contents {display:none;}
+body .ui-dialog .contents {display:block;}
+a.nude {text-decoration:none;}
+#content .embedded_only {display:none!important;}
+.embedded #content .embedded_only {display:block!important;}
+#content .not_embedded {display:block!important;}
+.embedded #content .not_embedded {display:none!important;}
+
+/* ---------------------------- Google Maps objects ---------------------------- */
+.map_inactive {
+  opacity:0.5;
+}
+.google_label {
+    background-color:#fffa75;
+    border:1px solid #555555;
+    padding:0 10px 0 10px;
+    opacity:0.8;
+}
+.region_title {
+    font-weight:bold;
+    font-size:12px;
+    white-space:nowrap;
+}

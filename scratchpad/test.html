@@ -1,0 +1,13 @@
+<h1>javascript testing area</h1>
+<script>
+function BaseClass() {
+}
+
+function DerivedClass() {
+}
+DerivedClass.prototype = new BaseClass();
+
+var oD = new DerivedClass();
+document.write(oD.constructor);
+
+</script>

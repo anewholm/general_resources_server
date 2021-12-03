@@ -1,0 +1,71 @@
+\hypertarget{classgeneral__server_1_1Request}{\section{general\-\_\-server\-:\-:\-Request \-Class \-Reference}
+\label{classgeneral__server_1_1Request}\index{general\-\_\-server\-::\-Request@{general\-\_\-server\-::\-Request}}
+}
+\-Inheritance diagram for general\-\_\-server\-:\-:\-Request\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.573034cm]{classgeneral__server_1_1Request}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Request_a2e7633cd48fabc7ce5a16a56a8241922}{{\bfseries \-Request} (\hyperlink{classgeneral__server_1_1DatabaseNode}{\-Database\-Node} $\ast$m\-\_\-p\-Node, \hyperlink{classgeneral__server_1_1Conversation}{\-Conversation} $\ast$p\-Conversation, const \hyperlink{classgeneral__server_1_1MessageInterpretation}{\-Message\-Interpretation} $\ast$p\-M\-I, const bool b\-Is\-First\-Request\-On\-Connection=false)}\label{classgeneral__server_1_1Request_a2e7633cd48fabc7ce5a16a56a8241922}
+
+\item 
+\hypertarget{classgeneral__server_1_1Request_a68e0197ce5624f82b139ef957415986b}{const char $\ast$ {\bfseries process} ()}\label{classgeneral__server_1_1Request_a68e0197ce5624f82b139ef957415986b}
+
+\item 
+\hypertarget{classgeneral__server_1_1Request_ab4764b26c428d357969b51658ce51704}{void {\bfseries serialise} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \-I\-Xml\-Base\-Node $\ast$p\-Output) const }\label{classgeneral__server_1_1Request_ab4764b26c428d357969b51658ce51704}
+
+\item 
+\hypertarget{classgeneral__server_1_1Request_a531f41a2693e01a764d62b495062d55d}{const char $\ast$ {\bfseries to\-String} () const }\label{classgeneral__server_1_1Request_a531f41a2693e01a764d62b495062d55d}
+
+\item 
+\hypertarget{classgeneral__server_1_1Request_adeaa0ad35404efa0a7129a12046beac0}{\hyperlink{classgeneral__server_1_1Server}{\-Server} $\ast$ {\bfseries server} () const }\label{classgeneral__server_1_1Request_adeaa0ad35404efa0a7129a12046beac0}
+
+\item 
+\hypertarget{classgeneral__server_1_1Request_af53f73c90ea64f3f865d82bb0479dc6a}{const \-I\-Xml\-Library $\ast$ {\bfseries xml\-Library} () const }\label{classgeneral__server_1_1Request_af53f73c90ea64f3f865d82bb0479dc6a}
+
+\item 
+\hypertarget{classgeneral__server_1_1Request_a4e3529a5bfccc38095cf75f31a75a12e}{\hyperlink{classgeneral__server_1_1Database}{\-Database} $\ast$ {\bfseries db} () const }\label{classgeneral__server_1_1Request_a4e3529a5bfccc38095cf75f31a75a12e}
+
+\item 
+\hypertarget{classgeneral__server_1_1Request_a73318628fb465877f93cccb92b833cbc}{const \hyperlink{classgeneral__server_1_1StringMap}{\-String\-Map}\*
+$<$ \-I\-Xsl\-Module\-::\-Xsl\-Module\-Command\-Details $>$ $\ast$ {\bfseries xsl\-Commands} () const }\label{classgeneral__server_1_1Request_a73318628fb465877f93cccb92b833cbc}
+
+\item 
+\hypertarget{classgeneral__server_1_1Request_a8131b72855aacac4074a153452b372a0}{const \hyperlink{classgeneral__server_1_1StringMap}{\-String\-Map}\*
+$<$ \-I\-Xsl\-Module\-::\-Xsl\-Module\-Function\-Details $>$ $\ast$ {\bfseries xsl\-Functions} () const }\label{classgeneral__server_1_1Request_a8131b72855aacac4074a153452b372a0}
+
+\item 
+\hypertarget{classgeneral__server_1_1Request_ada56ee278c966a2cf166c65837883a3b}{const char $\ast$ {\bfseries xslt\-Module\-Namespace} () const }\label{classgeneral__server_1_1Request_ada56ee278c966a2cf166c65837883a3b}
+
+\item 
+\hypertarget{classgeneral__server_1_1Request_aa5987a94d252364fcc7d2505c804d442}{const char $\ast$ {\bfseries xslt\-Module\-Prefix} () const }\label{classgeneral__server_1_1Request_aa5987a94d252364fcc7d2505c804d442}
+
+\item 
+\hypertarget{classgeneral__server_1_1Request_a9d15a24e73e2a70fd133625c7cd653c9}{const char $\ast$ {\bfseries xsl\-Module\-Manager\-Name} () const }\label{classgeneral__server_1_1Request_a9d15a24e73e2a70fd133625c7cd653c9}
+
+\item 
+\hypertarget{group__XSLModule-Commands_gae7356522b87a3d9d831581d48617bcc5}{\-I\-Xml\-Base\-Node $\ast$ {\bfseries xsl\-Command\-\_\-global\-Variable\-Update} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const \-I\-Xsl\-Command\-Node $\ast$p\-Command\-Node, const \-I\-Xml\-Base\-Node $\ast$p\-Source\-Node, \-I\-Xml\-Base\-Node $\ast$p\-Output\-Node)}\label{group__XSLModule-Commands_gae7356522b87a3d9d831581d48617bcc5}
+
+\item 
+\hypertarget{group__XSLModule-Commands_ga62b874e4b02db54a71d23c1dae1932bb}{\-I\-Xml\-Base\-Node $\ast$ {\bfseries xsl\-Command\-\_\-send\-Resource} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const \-I\-Xsl\-Command\-Node $\ast$p\-Command\-Node, const \-I\-Xml\-Base\-Node $\ast$p\-Source\-Node, \-I\-Xml\-Base\-Node $\ast$p\-Output\-Node)}\label{group__XSLModule-Commands_ga62b874e4b02db54a71d23c1dae1932bb}
+
+\item 
+\hypertarget{group__XSLModule-Commands_ga027f59c9cf28596905d61af8a9dd08b1}{\-I\-Xml\-Base\-Node $\ast$ {\bfseries xsl\-Command\-\_\-throw} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, const \-I\-Xsl\-Command\-Node $\ast$p\-Command\-Node, const \-I\-Xml\-Base\-Node $\ast$p\-Source\-Node, \-I\-Xml\-Base\-Node $\ast$p\-Output\-Node)}\label{group__XSLModule-Commands_ga027f59c9cf28596905d61af8a9dd08b1}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneral__server_1_1Request_a1706fb328aba10c2cd00445aa627ee6b}{static void {\bfseries compilation\-Information} (const \-I\-Xml\-Query\-Environment $\ast$p\-Q\-E, \-I\-Xml\-Base\-Node $\ast$p\-Output)}\label{classgeneral__server_1_1Request_a1706fb328aba10c2cd00445aa627ee6b}
+
+\end{DoxyCompactItemize}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+platform\-\_\-general/\-Request.\-h\item 
+platform\-\_\-general/\-Request.\-cpp\end{DoxyCompactItemize}
