@@ -1,0 +1,6 @@
+# Third-party libraries — exclude from language statistics
+resources/shared/codemirror/** linguist-vendored=true
+resources/shared/jquery/** linguist-vendored=true
+resources/shared/tiny_mce/** linguist-vendored=true
+resources/shared/modernizr.js linguist-vendored=true
+resources/**/codemirror/** linguist-vendored=true
