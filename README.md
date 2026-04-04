@@ -21,7 +21,7 @@ The index page at `/` auto-generates a directory listing of the `resources/` tre
 ## Prerequisites
 
 - Apache 2 with `mod_php`
-- PHP 7.4+
+- PHP 8.1+
 
 ## Installation
 
