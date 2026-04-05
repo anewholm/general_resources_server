@@ -1,7 +1,7 @@
 <html>
   <head>
-      <link rel="shortcut icon" href="http://general-resources-server.localhost/resources/shared/favicon.ico"></link>
-      <link rel="icon" href="http://general-resources-server.localhost/resources/shared/favicon.ico" type="image/x-icon"></link>
+      <link rel="shortcut icon" href="http://general-resources-server.laptop/resources/shared/favicon.ico"></link>
+      <link rel="icon" href="http://general-resources-server.laptop/resources/shared/favicon.ico" type="image/x-icon"></link>
     <style>
       body {
         font-family:Trebuchet MS, verdana;

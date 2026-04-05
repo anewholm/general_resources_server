@@ -22,7 +22,7 @@ HTML;
         $transform = new Transform($xml_file, $xsl_file);
         $output = $transform->transformToXML();
         $output = preg_replace('/(<head[^>]*>)/', "$1<link rel='stylesheet' href='$path_to_dir/transform.css'/>", $output);
-        $output = preg_replace('/(<head[^>]*>)/', '$1<base href="http://general_server.localhost:8776"/>', $output);
+        $output = preg_replace('/(<head[^>]*>)/', '$1<base href="http://general_server.laptop:8776"/>', $output);
         $output = preg_replace('/(<body[^>]*>)/', "$1<div id='gs-last-transform'>$help_injection</div>", $output);
 
         print($output);
