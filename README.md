@@ -32,7 +32,8 @@ The index page at `/` auto-generates a directory listing of the `resources/` tre
 
 2. Configure an Apache vhost pointing to this directory, or use the `acorn-setup-hostname` script:
    ```bash
-   /var/www/scripts/acorn-setup-hostname general-resources-server
+   cd /var/www/general-resources-server
+   sudo [scripts install dir]/acorn-setup-hostname
    ```
 
 3. Drop static assets under `resources/` — they will be immediately available at `http://general-resources-server.laptop/resources/...`.
