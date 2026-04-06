@@ -1,5 +1,6 @@
 # General Resources Server
 
+![Human made content](human-made-content.png "Human made content")
 A lightweight Apache/PHP companion server to [General Server](https://github.com/anewholm/generalserver). Its sole purpose is to serve binary and static assets (images, fonts, third-party JS/CSS libraries) that General Server does not serve directly because it is XML-only.
 
 ## Why a separate server?
