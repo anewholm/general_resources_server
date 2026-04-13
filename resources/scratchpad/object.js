@@ -43,7 +43,7 @@ function Item(jHTMLElement, _owner) {
     //all built of microformat specification in the HTML
     //requires jQuery
 
-    //base values (http://microformats.org/wiki/geo)
+    //base values (https://microformats.org/wiki/geo)
     this.owner           = this._owner;
     this.map             = null;
     this.draggable       = this.hX(".draggable");

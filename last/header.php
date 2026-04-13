@@ -1,9 +1,9 @@
 <html>
   <head>
-    <base href="http://general_server.laptop:8776"/>
+    <base href="https://general_server.laptop"/>
     <title>last</title>
-    <link rel="shortcut icon" href="http://general-resources-server.laptop/resources/shared/favicon.ico"></link>
-    <link rel="icon" href="http://general-resources-server.laptop/resources/shared/favicon.ico" type="image/x-icon"></link>
+    <link rel="shortcut icon" href="https://general-resources-server.laptop/resources/shared/favicon.ico"></link>
+    <link rel="icon" href="https://general-resources-server.laptop/resources/shared/favicon.ico" type="image/x-icon"></link>
     <style>
         h1 span {
             font-size: 0.7em;
