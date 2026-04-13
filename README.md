@@ -1,6 +1,7 @@
 # General Resources Server
 
 ![Human made content](human-made-content.png "Human made content")
+[![Security Scan](https://github.com/anewholm/general_resources_server/actions/workflows/semgrep.yml/badge.svg)](https://github.com/anewholm/general_resources_server/actions/workflows/semgrep.yml)
 
 A lightweight Apache/PHP companion server to [General Server](https://github.com/anewholm/generalserver). Its sole purpose is to serve binary and static assets (images, fonts, third-party JS/CSS libraries) that General Server does not serve directly because it is XML-only.
 
